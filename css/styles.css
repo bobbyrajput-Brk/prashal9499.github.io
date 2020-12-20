@@ -2,14 +2,14 @@ body, html{
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Mulish', sans-serif;
-
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
 }
 
 /*
 .hero-image {
-  background-image: url("https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg");
-  height: 50%;
+  background-color: #121212;
+  height: 5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,11 +19,10 @@ body, html{
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 150%;
   left: 55%;
-  transform: translate(-50%, -50%);
-  color: #8FA6BA;
-  font-size: 600%;
+  transform: translate(-55%, -50%);
+  color: #FFAEAE;
   font-weight: 200px;
 }
 */
@@ -31,7 +30,7 @@ body, html{
 .sidebar{
   z-index: 1;
   top: 0;
-  background: #8FA6BA;
+  background: #121212;
   margin-top: 0px;
   padding-top: 100px;
   position: fixed;
@@ -58,32 +57,32 @@ body, html{
 }
 
 .sidebar .profile_info h3{
-  color: #FFFFFF;
+  color: #FFAEAE;
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: normal;
 }
 
 .p1 {
-  color: #FFFFFF;
+  color: #FFAEAE;
   margin-top: 0;
   font-weight: normal;
   text-align: center;
+  
 }
 
 .para{
-  color: #505050;
+  color: #FFFFFF;
+  background-color: #121212;
 }
 
 .heading {
   margin-left: 5px;
-  margin-left: 200px;
-  margin-right: 200px;
-  color: #8FA6BA;
+  color: #FFAEAE;
 }
 
 .sidebar a{
-  color: #fff;
+  color: #FFAEAE;
   display: block;
   width: 100%;
   line-height: 60px;
@@ -104,7 +103,7 @@ body, html{
 
 label #sidebar_btn{
   z-index: 1;
-  color: #fff;
+  color: #FFAEAE;
   position: fixed;
   cursor: pointer;
   left: 300px;
@@ -141,6 +140,7 @@ label #sidebar_btn:hover{
   background-size: cover;
   height: 100vh;
   transition: 0.5s;
+  background-color: #121212;
 }
 
 #check:checked ~ .content{
@@ -162,11 +162,10 @@ label #sidebar_btn:hover{
 .content .card p{
   background: #fff;
   padding: 5px;
-  margin-left: 200px;
-  margin-right: 200px;
   margin-bottom: 10px;
   font-size: 20px;
   opacity: 0.9;
+  background-color: #121212;
 }
 
 /* Responsive CSS */
@@ -197,7 +196,7 @@ label #sidebar_btn:hover{
   }
 
   .nav_bar{
-    background: #8FA6BA;
+    background: #121212;
     width: (100% - 0px);
     margin-top: 0px;
     display: flex;
@@ -213,7 +212,7 @@ label #sidebar_btn:hover{
   }
 
   .nav_bar .nav_btn{
-    color: #fff;
+    color: #FFAEAE;
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
@@ -225,12 +224,12 @@ label #sidebar_btn:hover{
   }
 
   .mobile_nav_items{
-    background: #8FA6BA;
+    background: #121212;
     display: none;
   }
 
   .mobile_nav_items a{
-    color: #fff;
+    color: #FFAEAE;
     display: block;
     text-align: center;
     letter-spacing: 1px;
@@ -255,36 +254,32 @@ label #sidebar_btn:hover{
 
 .centerdiv{
   display: flex;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-  color: #8FA6BA;
-  margin-left: 200px;
-  margin-right: 200px;
- 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFAEAE;
+  background-color: #121212;
 }
 
 .icon{
   height:100px;
   width: 100px;
-  background-color: #FFFFFF;
+  background-color: #121212;
   border-radius: 50px;
-  text-align: center;
+  text-align: left;
   margin: 10px;
   line-height: 100px;
  
 }
 
 hr.solid {
-  border-top: 1px solid #8FA6BA;
+  border-top: 0.5px solid #FFAEAE;
 }
 
 .tank {
-  width: 50%;
-  background-color: #F1F1F1;
+  width: 100%;
+  background-color: #CACACA;
   border-radius: 5px;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
 .skills {
@@ -296,10 +291,10 @@ hr.solid {
   
 }
 
-.html {width: 80%; background-color: #8FA6BA;}
-.css {width: 70%; background-color: #8FA6BA;}
-.js {width: 45%; background-color: #8FA6BA;}
-.php {width: 50%; background-color: #8FA6BA;}
+.html {width: 80%; background-color: #FFAEAE;}
+.css {width: 70%; background-color: #FFAEAE;}
+.js {width: 45%; background-color: #FFAEAE;}
+.php {width: 50%; background-color: #FFAEAE;}
 
 
 .foot{
@@ -307,23 +302,19 @@ hr.solid {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #8FA6BA;
-  margin-left: 200px;
-  margin-right: 200px;
- 
+  color: #121212; 
 }
 
 .social{
   height:10px;
   width: 40px;
-  background-color: #FFFFFF;
   border-radius: 50px;
-  text-align: center;
+  text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0px;
   line-height: 0px;
- 
+  background-color: #121212;
 }
 
 .fa {
