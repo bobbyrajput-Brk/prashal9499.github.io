@@ -351,3 +351,14 @@ hr.solid {
   background: #2c4762;
   color: white;
 }
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
