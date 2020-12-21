@@ -32,7 +32,7 @@ body, html{
   top: 0;
   background: #121212;
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 20px;
   position: fixed;
   left: 0;
   width: 250px;
@@ -133,8 +133,8 @@ label #sidebar_btn:hover{
 
 .content{
   width: (100% - 250px);
-  margin-top: 60px;
-  padding: 20px;
+  margin-top: 0px;
+  padding: 0px;
   margin-left: 250px;
   background-position: center;
   background-size: cover;
@@ -164,7 +164,7 @@ label #sidebar_btn:hover{
   padding: 5px;
   margin-bottom: 10px;
   font-size: 20px;
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: #121212;
 }
 
@@ -252,6 +252,7 @@ label #sidebar_btn:hover{
   }
 }
 
+/*
 .centerdiv{
   display: flex;
   justify-content: center;
@@ -269,8 +270,8 @@ label #sidebar_btn:hover{
   text-align: left;
   margin: 10px;
   line-height: 100px;
- 
 }
+*/
 
 hr.solid {
   border-top: 0.5px solid #FFAEAE;
@@ -291,10 +292,10 @@ hr.solid {
   
 }
 
-.html {width: 80%; background-color: #FFAEAE;}
-.css {width: 70%; background-color: #FFAEAE;}
-.js {width: 45%; background-color: #FFAEAE;}
-.php {width: 50%; background-color: #FFAEAE;}
+.html {width: 80%; background-color: #FFA071;}
+.css {width: 70%; background-color: #717BFF;}
+.js {width: 45%; background-color: #F2FF71;}
+.php {width: 50%; background-color: #C571FF;}
 
 
 .foot{
