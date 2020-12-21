@@ -1,3 +1,5 @@
+/* -------------------- body -------------------- */
+
 body, html{
   margin: 0;
   padding: 0;
@@ -6,33 +8,15 @@ body, html{
   background-color: #121212;
 }
 
-/*
-.hero-image {
-  background-color: #121212;
-  height: 5%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 150%;
-  left: 55%;
-  transform: translate(-55%, -50%);
-  color: #FFAEAE;
-  font-weight: 200px;
-}
-*/
+/* -------------------- side nav bar  -------------------- */
 
 .sidebar{
   z-index: 1;
   top: 0;
   background: #121212;
   margin-top: 0px;
-  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 67px;
   position: fixed;
   left: 0;
   width: 250px;
@@ -41,6 +25,8 @@ body, html{
   transition-property: left;
   overflow-y: auto;
 }
+
+/* ------------ avatar ------------ */
 
 .profile_info{
   display: flex;
@@ -63,23 +49,30 @@ body, html{
   font-weight: normal;
 }
 
-.p1 {
+/* ------------ side nav text ------------ */
+
+.p1{
   color: #FFAEAE;
-  margin-top: 0;
+  margin-top: 0px;
   font-weight: normal;
   text-align: center;
-  
 }
+
+/* ------------ content text ------------ */
 
 .para{
   color: #FFFFFF;
   background-color: #121212;
 }
 
-.heading {
+/* ------------ heading text ------------ */
+
+.heading{
   margin-left: 5px;
   color: #FFAEAE;
 }
+
+/* ------------ side nav content ------------ */
 
 .sidebar a{
   color: #FFAEAE;
@@ -101,40 +94,12 @@ body, html{
   padding-right: 10px;
 }
 
-label #sidebar_btn{
-  z-index: 1;
-  color: #FFAEAE;
-  position: fixed;
-  cursor: pointer;
-  left: 300px;
-  font-size: 20px;
-  margin: 5px 0;
-  transition: 0.5s;
-  transition-property: color;
-}
-
-label #sidebar_btn:hover{
-  opacity: 0.7;
-}
-
-#check:checked ~ .sidebar{
-  left: -185px;
-}
-
-#check:checked ~ .sidebar a span{
-  display: none;
-}
-
-#check:checked ~ .sidebar a{
-  font-size: 20px;
-  margin-left: 165px;
-  width: 100%;
-}
+/* -------------------- main content -------------------- */
 
 .content{
   width: (100% - 250px);
   margin-top: 0px;
-  padding: 0px;
+  padding: 10px;
   margin-left: 250px;
   background-position: center;
   background-size: cover;
@@ -143,160 +108,141 @@ label #sidebar_btn:hover{
   background-color: #121212;
 }
 
-#check:checked ~ .content{
-  margin-left: 60px;
-}
-
-#check:checked ~ .sidebar .profile_info{
-  display: none;
-}
-
-#check{
-  display: none;
-}
+/*-------------------- responsive section -------------------- */
 
 .mobile_nav{
   display: none;
 }
+
+/* ------------ responsive content ------------ */
 
 .content .card p{
   background: #fff;
   padding: 5px;
   margin-bottom: 10px;
   font-size: 20px;
-  opacity: 0.8;
   background-color: #121212;
 }
-
-/* Responsive CSS */
 
 @media screen and (max-width: 780px){
   .sidebar{
-    display: none;
-  }
-
-  #sidebar_btn{
-    display: none;
+   display: none;
   }
 
   .content{
-    margin-left: 0;
-    margin-top: 0;
-    padding: 10px 20px;
-    transition: 0s;
-  }
-
-  #check:checked ~ .content{
-    margin-left: 0;
-  }
+   margin-left: 0;
+   margin-top: 0;
+   padding: 10px 20px;
+   transition: 0s;
+  } 
 
   .mobile_nav{
-    display: block;
-    width: calc(100% - 0%);
+   display: block;
+   width: calc(100% - 0%);
   }
+
+/* -------------------- responsive dropdown bar -------------------- */
 
   .nav_bar{
-    background: #121212;
-    width: (100% - 0px);
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+   background: #121212;
+   width: (100% - 0px);
+   margin-top: 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
   }
+
+/* ------------ avatar image ------------ */
 
   .nav_bar .mobile_profile_image{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
   }
 
+/* ------------ dropdown button ------------ */
+
   .nav_bar .nav_btn{
-    color: #FFAEAE;
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
-    transition-property: color;
+   color: #FFAEAE;
+   font-size: 22px;
+   cursor: pointer;
+   transition: 0.5s;
+   transition-property: color;
   }
 
   .nav_bar .nav_btn:hover{
-    opacity: 0.7;
-  }
+   opacity: 0.7;
+  } 
+
+/* ------------ navbar contents ------------ */
 
   .mobile_nav_items{
-    background: #121212;
-    display: none;
+   background: #121212;
+   display: none;
   }
 
   .mobile_nav_items a{
-    color: #FFAEAE;
-    display: block;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 60px;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transition-property: background;
+   color: #FFAEAE;
+   display: block;
+   text-align: center;
+   letter-spacing: 1px;
+   line-height: 60px;
+   text-decoration: none;
+   box-sizing: border-box;
+   transition: 0.5s;
+   transition-property: background;
   }
 
   .mobile_nav_items a:hover{
-    opacity: 0.7;
+   opacity: 0.7;
   }
+
   .mobile_nav_items i{
-    padding-right: 10px;
+   padding-right: 10px;
   }
 
   .active{
-    display: block;
+   display: block;
   }
 }
 
-/*
-.centerdiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #FFAEAE;
-  background-color: #121212;
-}
+/* -------------------- border divider -------------------- */
 
-.icon{
-  height:100px;
-  width: 100px;
-  background-color: #121212;
-  border-radius: 50px;
-  text-align: left;
-  margin: 10px;
-  line-height: 100px;
-}
-*/
-
-hr.solid {
+hr.solid{
   border-top: 0.5px solid #FFAEAE;
 }
 
-.tank {
+/* -------------------- skill bar -------------------- */
+
+
+/* ------------ bar background ------------ */
+
+.tank{
   width: 100%;
-  background-color: #CACACA;
-  border-radius: 5px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 
-.skills {
+/* ------------ bar front ------------ */
+
+.skills{
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  border-radius: 5px;
-  
+  border-radius: 10px; 
 }
 
-.html {width: 80%; background-color: #FFA071;}
-.css {width: 70%; background-color: #717BFF;}
-.js {width: 45%; background-color: #F2FF71;}
-.php {width: 50%; background-color: #C571FF;}
+/* ------------ front bar length & colors ------------ */
 
+.html {width: 80%; background-color: #BFA182;}
+.css {width: 70%; background-color: #82A3BF;}
+.js {width: 45%; background-color: #BCBF82;}
+.php {width: 50%; background-color: #9682BF;}
+
+
+/* -------------------- footer -------------------- */
 
 .foot{
   display: flex;
@@ -305,6 +251,8 @@ hr.solid {
   text-align: center;
   color: #121212; 
 }
+
+/* ------------ social media bar ------------ */
 
 .social{
   height:10px;
@@ -318,7 +266,9 @@ hr.solid {
   background-color: #121212;
 }
 
-.fa {
+/* ------------ social media icons ------------ */
+
+.fa{
   padding: 10px;
   font-size: 15px;
   width: 15px;
@@ -328,38 +278,49 @@ hr.solid {
   margin: 5px 2px;
 }
 
-.fa:hover {
+.fa:hover{
   opacity: 0.7;
 }
 
-.fa-linkedin {
+/* ------------ icon background colors ------------ */
+
+.fa-linkedin{
   background: #007bb5;
   color: white;
 }
-.fa-facebook {
+.fa-facebook{
   background: #3B5998;
   color: white;
 }
-.fa-instagram {
+.fa-instagram{
   background: #125688;
   color: white;
 }
-.fa-telegram {
+.fa-telegram{
   background: #00aff0;
   color: white;
 }
-.fa-github {
+.fa-github{
   background: #2c4762;
   color: white;
 }
 
-.fa-reddit {
+.fa-reddit{
   background: #ff5700;
   color: white;
 }
 
-.fa-snapchat-ghost {
+.fa-snapchat-ghost{
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* -------------------- creator credits -------------------- */
+
+.credits{
+  color: #FFAEAE;
+  margin-top: 20px;
+  font-weight: normal;
+  text-align: center;
 }
