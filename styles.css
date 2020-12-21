@@ -8,9 +8,11 @@ body, html{
   background-color: #121212;
 }
 
+/* -------------------- body -------------------- */
+
 /* -------------------- side nav bar  -------------------- */
 
-.sidebar{
+.sidenavbar{
   z-index: 1;
   top: 0;
   background: #121212;
@@ -26,44 +28,52 @@ body, html{
   overflow-y: auto;
 }
 
-/* ------------ avatar ------------ */
+/* -------------------- side nav bar  -------------------- */
 
-.profile_info{
+/* ------------ profile, avatar ------------ */
+
+.profile{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.sidebar .profile_info .profile_image{
+.sidenavbar .profile .profile_avatar{
   width: 170px;
   height: 170px;
   border-radius: 100px;
   margin-bottom: 10px;
 }
 
-.sidebar .profile_info h3{
+.sidenavbar .profile h3{
   color: #FFAEAE;
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: normal;
 }
 
-/* ------------ side nav text ------------ */
+/* ------------ profile, avatar ------------ */
 
-.p1{
+/* ------------ side nav bar text ------------ */
+
+.info{
   color: #FFAEAE;
   margin-top: 0px;
   font-weight: normal;
   text-align: center;
 }
 
+/* ------------ side nav bar text ------------ */
+
 /* ------------ content text ------------ */
 
-.para{
+.paragraph{
   color: #FFFFFF;
   background-color: #121212;
 }
+
+/* ------------ content text ------------ */
 
 /* ------------ heading text ------------ */
 
@@ -72,9 +82,11 @@ body, html{
   color: #FFAEAE;
 }
 
-/* ------------ side nav content ------------ */
+/* ------------ heading text ------------ */
 
-.sidebar a{
+/* ------------ side nav bar content ------------ */
+
+.sidenavbar a{
   color: #FFAEAE;
   display: block;
   width: 100%;
@@ -86,13 +98,15 @@ body, html{
   transition-property: background;
 }
 
-.sidebar a:hover{
+.sidenavbar a:hover{
   opacity: 0.7;
 }
 
-.sidebar i{
+.sidenavbar i{
   padding-right: 10px;
 }
+
+/* ------------ side nav bar content ------------ */
 
 /* -------------------- main content -------------------- */
 
@@ -108,9 +122,11 @@ body, html{
   background-color: #121212;
 }
 
-/*-------------------- responsive section -------------------- */
+/* -------------------- main content -------------------- */
 
-.mobile_nav{
+/* -------------------- responsive css section -------------------- */
+
+.top_nav{
   display: none;
 }
 
@@ -125,7 +141,7 @@ body, html{
 }
 
 @media screen and (max-width: 780px){
-  .sidebar{
+  .sidenavbar{
    display: none;
   }
 
@@ -136,10 +152,12 @@ body, html{
    transition: 0s;
   } 
 
-  .mobile_nav{
+  .top_nav{
    display: block;
    width: calc(100% - 0%);
   }
+
+/* ------------ responsive content ------------ */
 
 /* -------------------- responsive dropdown bar -------------------- */
 
@@ -153,13 +171,17 @@ body, html{
    padding: 10px 20px;
   }
 
+/* -------------------- responsive dropdown bar -------------------- */
+
 /* ------------ avatar image ------------ */
 
-  .nav_bar .mobile_profile_image{
+  .nav_bar .top_nav_avatar{
    width: 50px;
    height: 50px;
    border-radius: 50%;
   }
+
+/* ------------ avatar image ------------ */
 
 /* ------------ dropdown button ------------ */
 
@@ -175,14 +197,16 @@ body, html{
    opacity: 0.7;
   } 
 
+/* ------------ dropdown button ------------ */
+
 /* ------------ navbar contents ------------ */
 
-  .mobile_nav_items{
+  .top_nav_items{
    background: #121212;
    display: none;
   }
 
-  .mobile_nav_items a{
+  .top_nav_items a{
    color: #FFAEAE;
    display: block;
    text-align: center;
@@ -194,11 +218,11 @@ body, html{
    transition-property: background;
   }
 
-  .mobile_nav_items a:hover{
+  .top_nav_items a:hover{
    opacity: 0.7;
   }
 
-  .mobile_nav_items i{
+  .top_nav_items i{
    padding-right: 10px;
   }
 
@@ -207,32 +231,43 @@ body, html{
   }
 }
 
+/* ------------ navbar contents ------------ */
+
+/* -------------------- responsive css section -------------------- */
+
+
 /* -------------------- border divider -------------------- */
 
 hr.solid{
   border-top: 0.5px solid #FFAEAE;
 }
 
+/* -------------------- border divider -------------------- */
+
 /* -------------------- skill bar -------------------- */
 
 
 /* ------------ bar background ------------ */
 
-.tank{
+.skill_background{
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 10px;
 }
 
+/* ------------ bar background ------------ */
+
 /* ------------ bar front ------------ */
 
-.skills{
+.skills_bar{
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
   border-radius: 10px; 
 }
+
+/* ------------ bar front ------------ */
 
 /* ------------ front bar length & colors ------------ */
 
@@ -241,10 +276,13 @@ hr.solid{
 .js {width: 45%; background-color: #BCBF82;}
 .php {width: 50%; background-color: #9682BF;}
 
+/* ------------ front bar length & colors ------------ */
+
+/* -------------------- skill bar -------------------- */
 
 /* -------------------- footer -------------------- */
 
-.foot{
+.footer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +292,7 @@ hr.solid{
 
 /* ------------ social media bar ------------ */
 
-.social{
+.social_icons{
   height:10px;
   width: 40px;
   border-radius: 50px;
@@ -265,6 +303,8 @@ hr.solid{
   line-height: 0px;
   background-color: #121212;
 }
+
+/* ------------ social media bar ------------ */
 
 /* ------------ social media icons ------------ */
 
@@ -281,6 +321,8 @@ hr.solid{
 .fa:hover{
   opacity: 0.7;
 }
+
+/* ------------ social media icons ------------ */
 
 /* ------------ icon background colors ------------ */
 
@@ -316,11 +358,17 @@ hr.solid{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-/* -------------------- creator credits -------------------- */
+/* ------------ icon background colors ------------ */
 
-.credits{
+/* -------------------- end text -------------------- */
+
+.text{
   color: #FFAEAE;
   margin-top: 20px;
   font-weight: normal;
   text-align: center;
 }
+
+/* -------------------- end text -------------------- */
+
+/* -------------------- footer -------------------- */
