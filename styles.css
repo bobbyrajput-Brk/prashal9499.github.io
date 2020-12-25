@@ -7,6 +7,7 @@ body, html{
   font-family: 'Quicksand', sans-serif;
   background-image: url("background.png");
   background-color: #000000;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -72,8 +73,7 @@ body, html{
   border-radius: 5px;
   padding: 5px;
   color: #FFFFFF;
-  background-color: #ffffff1a;
-  text-align: center;
+
 }
 
 .top_nav_text{
@@ -108,10 +108,10 @@ body, html{
 /* -------------------- main content -------------------- */
 
 .content{
-  width: (100% - 250px);
   margin-top: 0px;
   padding: 10px;
-  margin-left: 250px;
+  margin-left: 450px;
+  margin-right: 200px;
   background-position: center;
   background-size: cover;
   transition: 0.5s;
@@ -139,6 +139,7 @@ body, html{
 
   .content{
    margin-left: 0;
+   margin-right: 0;
    margin-top: 0;
    padding: 10px 20px;
    height: auto;
@@ -224,7 +225,8 @@ body, html{
 /* -------------------- border divider -------------------- */
 
 hr.solid{
-  border-top: 0.5px solid #FFFFFF;
+  border-top: 0.5px solid #FFFFFFA1;
+  border-bottom: 0.5px solid #FFFFFFA1;
 }
 
 /* -------------------- skill bar -------------------- */
@@ -268,6 +270,16 @@ hr.solid{
 .php{
   width: 50%; 
   background-color: #9682BF;
+}
+
+.mysql{
+  width: 40%; 
+  background-color: #BB6363;
+}
+
+.shell{
+  width: 35%; 
+  background-color: #FFFFFF;
 }
 
 /* -------------------- footer -------------------- */
@@ -356,3 +368,29 @@ hr.solid{
   text-align: center;
   margin-bottom: auto;
 }
+
+/* -------------------- button -------------------- */
+
+.button {
+  background-color: #FFFFFFA1; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: #0000008e;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
