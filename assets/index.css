@@ -19,7 +19,7 @@ body, html{
   position: fixed;
   left: 0;
   width: 300px;
-  height: calc(100%);
+  height: 100%;
   transition: 0.5s;
   transition-property: left;
   overflow-y: auto;
