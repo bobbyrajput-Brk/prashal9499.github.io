@@ -1,172 +1,140 @@
 <!DOCTYPE html>
-  <html lang="en" dir="ltr">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-        <title>Prashal Tarkas</title>
-
-<!-- ------------------------ links ------------------------ -->
-
-          <link rel="stylesheet" href="styles.css">
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-             <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-
-
-
-    </head>
-
-<!-- ------------------------ body ------------------------ -->
-
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <meta name="description" content="Prashal Tarkas - passionate about web designing and learning new technological stuff">
+  <title>Prashal Tarkas</title>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/index.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
 
-<!-- ------------------------ top navbar ------------------------- -->
-
+  <!-- top nav -->
   <div class="top_nav">
     <div class="nav_bar">
-      <img src="avatar.jpg" class="top_nav_avatar" alt="Prashal Tarkas">
-        <p class="top_nav_text"><small>&nbsp; - Student, Web-Developer, Geek</small></p>
-          <i class="fa fa-bars nav_btn"></i>
+      <img src="assets/images/avatar.jpg" class="top_nav_avatar" alt="Prashal Tarkas">
+      <i class="fa fa-bars nav_btn"></i>
     </div>
-      <div class="top_nav_items">
-        <a href="#about_me"><i class="fas fa-info"></i><span>About Me</span></a>
-          <a href="#projects"><i class="fas fa-terminal"></i><span>Projects</span></a>
-            <a href="#skills"><i class="fas fa-bar-chart"></i><span>Skills</span></a>
-              <a href="files/resume.docx" download><i class="fas fa-download"></i><span>Download</span></a>
-      </div>
+    <div class="top_nav_items">
+      <a href="#about_me"><i class="fas fa-info"></i><span>About Me</span></a>
+      <a href="#projects"><i class="fas fa-terminal"></i><span>Projects</span></a>
+      <a href="#skills"><i class="fas fa-bar-chart"></i><span>Skills</span></a>
+      <a href="assets/documents/resume.pdf" download><i class="fas fa-download"></i><span>Download</span></a>
+    </div>
   </div>
 
-<!-- ------------------------ side navbar ------------------------ -->
+  <!-- side navbar -->
+  <div class="sidenavbar">
+    <div class="profile">
+      <img src="assets/images/avatar.jpg" class="profile_avatar" alt="Prashal Tarkas">
+      <h3 style="margin-top: 20px;" >Prashal Tarkas</h3>
+      <p class="info" style="margin-bottom: 50px;"><small>Student, Web-Developer, Geek</small></p>
+    </div>
+    <a href="#about_me"><i class="fas fa-info"></i><span>About Me</span></a>
+    <a href="#projects"><i class="fas fa-terminal"></i><span>My Projects</span></a>
+    <a href="#skills"><i class="fas fa-bar-chart"></i><span>Skills</span></a>
+    <a href="assets/documents/resume.pdf" download><i class="fas fa-download"></i><span>Download</span></a>
+  </div>
 
-    <div class="sidenavbar">
-      <div class="profile">
-        <img src="avatar.jpg" class="profile_avatar" alt="Prashal Tarkas">
-          <br> <!-- ------------------------ line break ------------------------ --> 
-            <h3>Prashal Tarkas</h3>
-              <p class="info"><small>Student, Web-Developer, Geek</small></p>
-      </div>
-        <br> <!-- ------------------------ line break ------------------------ --> 
-          <br> <!-- ------------------------ line break ------------------------ --> 
-            <a href="#about_me"><i class="fas fa-info"></i><span>About Me</span></a>
-              <a href="#projects"><i class="fas fa-terminal"></i><span>My Projects</span></a>
-                <a href="#skills"><i class="fas fa-bar-chart"></i><span>Skills</span></a>
-                  <a href="files/resume.docx" download><i class="fas fa-download"></i><span>Download</span></a>
+  <!-- section 1 -->
+  <div class="content" id="about_me">
+    <div class="card">
+      <h1 class="heading">Prashal Tarkas</h1>
+      <p class="paragraph">Hi there,<br>
+      I'm Prashal Tarkas, currently pursuing Integrated MCA VIIth Sem from School of Computers, IPS Academy, Indore. 
+      I love to develop and design web-apps, explore new stuff.</p>
+      <p class="paragraph" style="margin-bottom: 40px;">My hobbies and passion contains Web designing, learning new technological stuff,
+      playing video games, automobiles, mobile photography and listen to some music in my free time.</p>
     </div>
 
-<!-- ------------------------ content ------------------------ -->
+    <hr class="solid" id="projects">
 
-<!-- ------------------------ about section ------------------------ -->
+    <!-- section 2 -->  
+    <div class="card">
+      <h1 class="heading" style="margin-top: 40px;">Projects</h1>
+    </div>
+    <div class="card">
+      <p class="paragraph">There is not much i did but thats pretty much it...</p>
+      <h2 class="heading" style="margin-top: 40px; text-align: left;">Covid-19 Tracker -</h2>
+      <p class="paragraph">A Covid-19 cases tracking website which uses APIs to fetch data (World and India)</p>
+      <a href="https://github.com/Prashal9499/Covid19Tracker" target="_blank"><button class="button button1">Source</button></a>
+      <h2 class="heading" style="margin-top: 40px; text-align: left;" >Automobile Specifications Website -</h2>
+      <p class="paragraph">My first project for an automobile specifcation website</p>
+      <a href="https://github.com/Prashal9499/Fourwheelz" target="_blank"><button class="button button1" style="margin-bottom: 40px;">Source</button></a>
+    </div>
 
-      <div class="content" id="about_me">
-        <div class="card">
-          <h1 class="heading">Prashal Tarkas</h1>
-            <p class="paragraph">Hi there,
-              <br> <!-- ------------------------ line break ------------------------ --> 
-                I'm Prashal Tarkas, currently pursuing IMCA VIIth Sem from School of Computers, IPS Academy, Indore. I love to develop and design web-apps, explore new stuff.</p>
-                  <p class="paragraph">My hobbies and passion contains Web designing, learning new technological stuff, playing video games, automobiles, mobile photography and listen to some music in my free time.</p>
-        </div>
-        
-<!-- ------------------------ project section ------------------------- -->  
-
-          <br id="projects"> <!-- ------------------------ line break ------------------------ --> 
-            <hr class="solid" > <!-- ------------------------ page break ------------------------ --> 
-              <br> <!-- ------------------------ line break ------------------------ --> 
-                <div class="card" >
-                  <h1 class="heading">Projects</h1>
-                </div>
-                  <div class="card">
-                    <p class="paragraph">There is not much i did but thats pretty much it...</p>
-                      <h2 class="heading">Covid 19 Tracker -</h2>
-                        <p class="paragraph">A covid 19 cases tracking website which uses APIs to fetch data (World and India )</p>
-                          <a href="https://github.com/Prashal9499/Covid19Tracker" target="_blank"><button class="button button1">Github Source</button></a>
-                            <br> <!-- ------------------------ line break ------------------------ --> 
-                              <br> <!-- ------------------------ line break ------------------------ --> 
-                                <h2 class="heading">Automobile Specifications Website -</h2>
-                                  <p class="paragraph">My first project for an automobile specifcation website</p>
-                                    <a href="https://github.com/Prashal9499/Fourwheelz" target="_blank"><button class="button button1">Github Source</button></a>
-                  </div>
-
-<!-- ------------------------ skills section ------------------------ -->   
-                    <br> <!-- ------------------------ line break ------------------------ --> 
-                      <br id="skills"> <!-- ------------------------ line break ------------------------ --> 
-                        <hr class="solid" > <!-- ------------------------ page break ------------------------ --> 
-                          <br> <!-- ------------------------ line break ------------------------ --> 
-                            <div class="card">
-                              <h1 class="heading">Skills</h1>
-                                <p class="paragraph">HTML</p>
-                              <div>
-                                <div class="skill_background">
-                                  <div class="skills_bar html"></div>
-                                </div>
-                                </div>
-                                  <p class="paragraph">CSS</p>
-                                    <div class="skill_background">
-                                      <div class="skills_bar css"></div>
-                                    </div>
-                                      <p class="paragraph">JavaScript</p>
-                                    <div class="skill_background">
-                                      <div class="skills_bar js"></div>
-                                    </div>
-                                      <p class="paragraph">PHP</p>
-                                        <div class="skill_background">
-                                          <div class="skills_bar php"></div>
-                                        </div>
-                                        <p class="paragraph">MySQL</p>
-                                        <div class="skill_background">
-                                          <div class="skills_bar mysql"></div>
-                                        </div>
-                                        <p class="paragraph">Shell Script</p>
-                                        <div class="skill_background">
-                                          <div class="skills_bar shell"></div>
-                                        </div>
-                          </div>
-                            <br> <!-- ------------------------ line break ------------------------ --> 
-                              <br> <!-- ------------------------ line break ------------------------ --> 
-                                <hr class="solid"> <!-- ------------------------ page break ------------------------ --> 
-                              
-<!-- ------------------------ footer ------------------------ -->
-
-                                  <div class="card">
-                                    <div class="footer">
-                                      <a href="https://www.facebook.com/Prashal.9499/" target="_blank" class="social_icons">
-                                        <i class="fa fa-1x fa-facebook" aria-hidden="true"></i>
-                                      </a>
-                                        <a href="https://t.me/Prashal_9499" target="_blank"  class="social_icons">
-                                          <i class="fa fa-1x fa-telegram" aria-hidden="true"></i>
-                                        </a>
-                                          <a href="https://www.instagram.com/prashal_9499/" target="_blank"  class="social_icons">
-                                            <i class="fa fa-1x fa-instagram" aria-hidden="true"></i>
-                                          </a>
-                                            <a href="https://github.com/Prashal9499" target="_blank"  class="social_icons">
-                                              <i class="fa fa-1x fa-github" aria-hidden="true"></i>
-                                            </a>
-                                              <a href="https://www.linkedin.com/in/prashal9499/" target="_blank"  class="social_icons">
-                                                <i class="fa fa-1x fa-linkedin" aria-hidden="true"></i>
-                                              </a>
-                                                <a href="https://www.reddit.com/user/prashal_9499" target="_blank"  class="social_icons">
-                                                  <i class="fa fa-1x fa-reddit" aria-hidden="true"></i>
-                                                </a>
-                                                  <a href="https://www.snapchat.com/add/prashal_9499" target="_blank"  class="social_icons">
-                                                  <i class="fa fa-1x fa-snapchat-ghost" aria-hidden="true"></i>
-                                                  </a>
-                                    </div>
-                                  </div>
-                                    <br> <!-- ------------------------ line break ------------------------ --> 
-                                      <small><p class="text">Designed By<b></b><a style="color: #FFFFFF;" href="https://github.com/Prashal9499" target="_blank">&nbsp;Prashal Tarkas</a></b></p></small>
-                             
+    <hr class="solid" id="skills"> 
+                           
+    <!-- section 3 -->
+    <div class="card">
+      <h1 class="heading" style="margin-top: 40px;">Skills</h1>
+      <p class="paragraph">HTML</p>
+      <div class="skill_background">
+        <div class="skills_bar html"></div>
       </div>
+      <p class="paragraph">CSS</p>
+      <div class="skill_background">
+        <div class="skills_bar css"></div>
+      </div>
+      <p class="paragraph">JavaScript</p>
+      <div class="skill_background">
+        <div class="skills_bar js"></div>
+      </div>
+      <p class="paragraph">PHP</p>
+      <div class="skill_background">
+        <div class="skills_bar php"></div>
+      </div>
+      <p class="paragraph">MySQL</p>
+      <div class="skill_background">
+        <div class="skills_bar mysql"></div>
+      </div>
+      <p class="paragraph">Shell Script</p>
+      <div class="skill_background">
+        <div class="skills_bar shell" style="margin-bottom: 40px;"></div>
+      </div>
+    </div>
 
-<!-- ------------------------ javascript for top nav dropdown button ------------------------ -->
+    <hr class="solid">
+                               
+    <!-- footer -->
+    <div class="card footer">
+      <a href="https://www.facebook.com/Prashal.9499/" target="_blank" class="social_icons">
+        <i class="fa fa-1x fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="https://t.me/Prashal_9499" target="_blank"  class="social_icons">
+        <i class="fa fa-1x fa-telegram" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/prashal_9499/" target="_blank"  class="social_icons">
+        <i class="fa fa-1x fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/Prashal9499" target="_blank"  class="social_icons">
+        <i class="fa fa-1x fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/prashal9499/" target="_blank"  class="social_icons">
+        <i class="fa fa-1x fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.reddit.com/user/prashal_9499" target="_blank"  class="social_icons">
+        <i class="fa fa-1x fa-reddit" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.snapchat.com/add/prashal_9499" target="_blank"  class="social_icons">
+        <i class="fa fa-1x fa-snapchat-ghost" aria-hidden="true"></i>
+      </a>
+    </div>
 
-        <script type="text/javascript">
-          $(document).ready(function(){
-            $('.nav_btn').click(function(){
-              $('.top_nav_items').toggleClass('active');
-            });
-          });
-        </script>
-
+    <!-- end text -->
+    <p class="text">Designed By
+      <a style="color: #0000FF;" href="https://github.com/Prashal9499" target="_blank">&nbsp;Prashal Tarkas</a>
+    </p>                       
+  </div>
+ 
+   <!-- javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  <script src="assets/index.js"></script>
+  
 </body>
-
 </html>
