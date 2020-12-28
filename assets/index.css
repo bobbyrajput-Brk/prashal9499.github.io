@@ -1,5 +1,4 @@
 /* body */
-
 body, html{
   margin: 0;
   padding: 0;
@@ -8,7 +7,6 @@ body, html{
 }
 
 /* side nav bar */
-
 .sidenavbar{
   z-index: 1;
   top: 0;
@@ -26,7 +24,6 @@ body, html{
 }
 
 /* profile, avatar */
-
 .profile{
   display: flex;
   flex-direction: column;
@@ -49,7 +46,6 @@ body, html{
 }
 
 /* side nav bar text */
-
 .info{
   color: #FFFFFF;
   margin-top: 0px;
@@ -58,7 +54,6 @@ body, html{
 }
 
 /* content text */
-
 .paragraph{
   color: #5D6D7E; 
 }
@@ -68,7 +63,6 @@ body, html{
 }
 
 /* heading text */
-
 .heading{
   text-align: center;
   padding: 5px;
@@ -83,7 +77,6 @@ body, html{
 }
 
 /* side nav bar content */
-
 .sidenavbar a{
   color: #FFFFFF;
   display: block;
@@ -105,7 +98,6 @@ body, html{
 }
 
 /* main content */
-
 .content{
   margin-top: 0px;
   padding: 10px;
@@ -116,26 +108,29 @@ body, html{
   transition: 0.5s;
 }
 
-/* responsive css section */
-
+/* no top nav desktop version */
 .top_nav{
   display: none;
   height: auto;
 }
 
-/* responsive content */
-
+/* content area */
 .content .card p{
   padding: 5px;
   margin-bottom: 10px;
   font-size: 20px;
 }
 
+/* responsive css */
+
 @media screen and (max-width: 780px){
+  
+  /* no side nav bar (mobile version) */
   .sidenavbar{
    display: none;
   }
-
+  
+  /* content area */
   .content{
    margin-left: 0;
    margin-right: 0;
@@ -145,33 +140,30 @@ body, html{
    transition: 0s;
   } 
 
+  /* top nav */
   .top_nav{
    display: block;
    justify-content: space-between;
    align-items: center;
   }
 
-/* responsive dropdown bar */
-
+  /* responsive dropdown bar */
   .nav_bar{
    background: #17202A;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 7px ;
-   
   } 
 
-/* avatar image */
-
+  /* avatar image */
   .nav_bar .top_nav_avatar{
    width: 35px;
    height: 35px;
    border-radius: 50%;
   }
 
-/* dropdown button */
-
+  /* dropdown button */
   .nav_bar .nav_btn{
    color: #FFFFFF;
    font-size: 22px;
@@ -184,12 +176,10 @@ body, html{
    opacity: 0.7;
   } 
 
-/* navbar contents */
-
+  /* navbar contents */
   .top_nav_items{
    background: #17202A;
    display: none;
-  
   }
 
   .top_nav_items a{
@@ -202,7 +192,6 @@ body, html{
    box-sizing: border-box;
    transition: 0.5s;
    transition-property: background;
-
   }
 
   .top_nav_items a:hover{
@@ -219,17 +208,13 @@ body, html{
 }
 
 /* border divider */
-
 hr.solid{
   border-top: 0.5px solid #5D6D7E;
   border-bottom: 0.5px solid #5D6D7E;
 }
 
 /* skill bar */
-
-
 /* bar background */
-
 .skill_background{
   width: 100%;
   background-color: #0000001a;
@@ -237,7 +222,6 @@ hr.solid{
 }
 
 /* bar front */
-
 .skills_bar{
   text-align: right;
   padding-top: 10px;
@@ -247,7 +231,6 @@ hr.solid{
 }
 
 /* front bar length & colors */
-
 .html{
   width: 80%; 
   background-color: #9B59B6;
@@ -279,7 +262,6 @@ hr.solid{
 }
 
 /* footer */
-
 .footer{
   display: flex;
   justify-content: center;
@@ -289,7 +271,6 @@ hr.solid{
 }
 
 /* social media bar */
-
 .social_icons{
   height:10px;
   width: 40px;
@@ -302,7 +283,6 @@ hr.solid{
 }
 
 /* social media icons */
-
 .fa{
   padding: 10px;
   font-size: 15px;
@@ -318,7 +298,6 @@ hr.solid{
 }
 
 /* icon background colors */
-
 .fa-linkedin{
   background: #007bb5;
   color: white;
@@ -356,7 +335,6 @@ hr.solid{
 }
 
 /* end text */
-
 .text{
   margin-top: 40px;
   font-size: 14px;
@@ -365,7 +343,6 @@ hr.solid{
 }
 
 /* button */
-
 .button {
   background-color: #17202A;
   border: none;
@@ -382,8 +359,7 @@ hr.solid{
   opacity: 0.8;
 }
 
-/* link decoration */
-
+/* link no underline */
 a:link {
   text-decoration: none;
 }
