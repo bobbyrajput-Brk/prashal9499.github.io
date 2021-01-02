@@ -298,11 +298,6 @@ hr.solid{
 }
 
 /* icon background colors */
-.fa-linkedin{
-  background: #007bb5;
-  color: white;
-}
-
 .fa-facebook{
   background: #3B5998;
   color: white;
@@ -313,25 +308,19 @@ hr.solid{
   color: white;
 }
 
-.fa-telegram{
-  background: #00aff0;
-  color: white;
-}
-
 .fa-github{
   background: #2c4762;
   color: white;
 }
 
-.fa-reddit{
-  background: #ff5700;
+.fa-linkedin{
+  background: #007bb5;
   color: white;
 }
 
-.fa-snapchat-ghost{
-  background: #fffc00;
+.fa-telegram{
+  background: #00aff0;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* end text */
