@@ -211,6 +211,23 @@ hr.solid{
   border-bottom: 0.5px solid #5D6D7E;
 }
 
+/* button */
+.button{
+  background-color: #17202A;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.button1:hover{
+  opacity: 0.8;
+}
+
 /* skill bar */
 .skill_background{
   width: 100%;
@@ -324,24 +341,7 @@ hr.solid{
   margin-bottom: auto;
 }
 
-/* button */
-.button {
-  background-color: #17202A;
-  border: none;
-  color: white;
-  padding: 12px 28px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  margin-left: 5px;
-  border-radius: 5px;
-}
-
-.button1:hover {
-  opacity: 0.8;
-}
-
-/* link no underline */
-a:link {
+/* link text decoration*/
+a:link{
   text-decoration: none;
 }
