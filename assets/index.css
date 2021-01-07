@@ -2,24 +2,16 @@ body, html{
   margin: 0;
   padding: 0;
   height: auto;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* side nav bar */
 .sidenavbar{
-  z-index: 1;
-  top: 0;
-  background: #17202A;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  background: #060042;
   padding-top: 67px;
   position: fixed;
-  left: 0;
-  width: 300px;
+  width: 250px;
   height: 100%;
-  transition: 0.5s;
-  transition-property: left;
-  overflow-y: auto;
 }
 
 /* profile, avatar */
@@ -42,31 +34,20 @@ body, html{
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: normal;
+  margin-top: 20px;
 }
 
 /* side nav bar text */
-.info{
+.about{
   color: #FFFFFF;
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 14px;
   text-align: center;
   margin-bottom: 55px;
 }
 
-/* content text */
-.paragraph{
-  color: #5D6D7E; 
-}
-
 .text_margin{
   margin-bottom: 90px;
-}
-
-/* heading text */
-.heading{
-  text-align: center;
-  padding: 5px;
-  color: #17202A;
 }
 
 /* top nav text */
@@ -86,8 +67,6 @@ body, html{
   text-decoration: none;
   padding-left: 40px;
   box-sizing: border-box;
-  transition: 0.5s;
-  transition-property: background;
 }
 
 .sidenavbar a:hover{
@@ -100,13 +79,9 @@ body, html{
 
 /* main content */
 .content{
-  margin-top: 0px;
   padding: 10px;
-  margin-left: 450px;
-  margin-right: 200px;
-  background-position: center;
-  background-size: cover;
-  transition: 0.5s;
+  margin-left: 350px;
+  margin-right: 100px;
 }
 
 .top_nav{
@@ -115,8 +90,6 @@ body, html{
 }
 
 .content .card p{
-  padding: 5px;
-  margin-bottom: 10px;
   font-size: 20px;
 }
 
@@ -130,12 +103,9 @@ body, html{
   
   /* content area */
   .content{
-   margin-left: 0;
-   margin-right: 0;
-   margin-top: 0;
+   margin: 0;
    padding: 10px 20px;
    height: auto;
-   transition: 0s;
   } 
 
   /* top nav */
@@ -147,7 +117,7 @@ body, html{
 
   /* responsive dropdown bar */
   .nav_bar{
-   background: #17202A;
+   background: #060042;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -166,8 +136,6 @@ body, html{
    color: #FFFFFF;
    font-size: 22px;
    cursor: pointer;
-   transition: 0.5s;
-   transition-property: color;
   }
 
   .nav_bar .nav_btn:hover{
@@ -176,7 +144,7 @@ body, html{
 
   /* navbar contents */
   .top_nav_items{
-   background: #17202A;
+   background: #060042;
    display: none;
   }
 
@@ -188,8 +156,6 @@ body, html{
    line-height: 60px;
    text-decoration: none;
    box-sizing: border-box;
-   transition: 0.5s;
-   transition-property: background;
   }
 
   .top_nav_items a:hover{
@@ -207,21 +173,20 @@ body, html{
 
 /* border divider */
 hr.solid{
-  border-top: 0.5px solid #5D6D7E;
-  border-bottom: 0.5px solid #5D6D7E;
+  border-top: 0.5px solid #000000;
+  border-bottom: 0.5px solid #000000;
 }
 
 /* button */
 .button{
-  background-color: #17202A;
+  background-color: #060042;
   border: none;
   color: white;
   padding: 12px 28px;
   text-align: center;
   text-decoration: none;
   font-size: 12px;
-  margin-left: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .button1:hover{
@@ -231,16 +196,13 @@ hr.solid{
 /* skill bar */
 .skill_background{
   width: 100%;
-  background-color: #0000001a;
-  border-radius: 10px;
+  background-color: #0000001A;
 }
 
 .skills_bar{
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #000000;
-  border-radius: 10px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .html{
@@ -279,7 +241,6 @@ hr.solid{
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #000000; 
 }
 
 /* social media icons */
@@ -288,10 +249,6 @@ hr.solid{
   width: 40px;
   border-radius: 50px;
   text-align: left;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin: 0px;
-  line-height: 0px;
 }
 
 .fa{
