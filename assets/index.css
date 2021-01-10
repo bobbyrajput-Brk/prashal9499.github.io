@@ -200,9 +200,7 @@ hr.solid{
 }
 
 .skills_bar{
-  text-align: right;
-  padding-top: 5px;
-  padding-bottom: 5px;
+padding: 3px;
 }
 
 .html{
@@ -228,11 +226,6 @@ hr.solid{
 .mysql{
   width: 40%; 
   background-color: #E74C3C;
-}
-
-.shell{
-  width: 35%; 
-  background-color: #34495E ;
 }
 
 /* footer */
