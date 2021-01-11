@@ -5,7 +5,7 @@ body, html{
   font-family: 'Roboto', sans-serif;
 }
 
-/* side nav bar */
+/* side navbar */
 .sidenavbar{
   background: #060042;
   padding-top: 67px;
@@ -37,7 +37,7 @@ body, html{
   margin-top: 20px;
 }
 
-/* side nav bar text */
+/* side navbar text */
 .about{
   color: #FFFFFF;
   margin-top: 0;
@@ -50,7 +50,7 @@ body, html{
   margin-bottom: 90px;
 }
 
-/* top nav text */
+/* top navbar text */
 .top_nav_text{
   padding: 0px;
   color: #FFFFFF;
@@ -58,7 +58,7 @@ body, html{
   margin-right: auto;
 }
 
-/* side nav bar content */
+/* side navbar content */
 .sidenavbar a{
   color: #FFFFFF;
   display: block;
@@ -108,7 +108,7 @@ body, html{
    height: auto;
   } 
 
-  /* top nav */
+  /* top navbar */
   .top_nav{
    display: block;
    justify-content: space-between;
@@ -169,12 +169,6 @@ body, html{
   .active{
    display: block;
   }
-}
-
-/* border divider */
-hr.solid{
-  border-top: 0.5px solid #000000;
-  border-bottom: 0.5px solid #000000;
 }
 
 /* button */
