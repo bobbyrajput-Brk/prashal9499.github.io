@@ -1,17 +1,16 @@
 body, html{
   margin: 0;
   padding: 0;
-  height: auto;
   font-family: 'Roboto', sans-serif;
 }
 
 /* side navbar */
 .sidenavbar{
-  background: #060042;
   padding-top: 67px;
   position: fixed;
   width: 250px;
   height: 100%;
+  background-color: #0B5345; 
 }
 
 /* profile, avatar */
@@ -84,6 +83,10 @@ body, html{
   margin-right: 100px;
 }
 
+.main_text{
+  color: #0B5345; 
+}
+
 .top_nav{
   display: none;
   height: auto;
@@ -117,24 +120,23 @@ body, html{
 
   /* responsive dropdown bar */
   .nav_bar{
-   background: #060042;
+   background-color: #0B5345; 
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 7px ;
+   padding: 15px;
   } 
 
   /* avatar image */
   .nav_bar .top_nav_avatar{
-   width: 35px;
-   height: 35px;
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
   }
 
   /* dropdown button */
   .nav_bar .nav_btn{
    color: #FFFFFF;
-   font-size: 22px;
    cursor: pointer;
   }
 
@@ -144,7 +146,7 @@ body, html{
 
   /* navbar contents */
   .top_nav_items{
-   background: #060042;
+  background-color: #0B5345; 
    display: none;
   }
 
@@ -173,14 +175,11 @@ body, html{
 
 /* button */
 .button{
-  background-color: #060042;
-  border: none;
-  color: white;
-  padding: 12px 28px;
+  background-color: #FFFFFF;
+  border: 1px solid #0B5345; ;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 .button1:hover{
@@ -199,27 +198,39 @@ padding: 3px;
 
 .html{
   width: 80%; 
-  background-color: #9B59B6;
+  background-color: #F16529;
 }
 
 .css{
   width: 70%; 
-  background-color: #2980B9;
+  background-color: #2565AE;
 }
 
 .js{
   width: 45%; 
-  background-color: #1ABC9C;
+  background-color: #F0DB4F;
 }
 
 .php{
   width: 50%; 
-  background-color: #F1C40F;
+  background-color: #787CB5;
 }
 
 .mysql{
   width: 40%; 
-  background-color: #E74C3C;
+  background-color: #00758F;
+}
+
+/* skill icon */
+.fa-js{
+  background: #000000;
+}
+
+.fa-php{
+  background: #787CB5;
+  width: 33px;
+  height: 17px;
+  border-radius: 50%;
 }
 
 /* footer */
@@ -228,6 +239,7 @@ padding: 3px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 15px;
 }
 
 /* social media icons */
@@ -238,48 +250,45 @@ padding: 3px;
   text-align: left;
 }
 
-.fa{
+.font_awesome{
   padding: 10px;
-  font-size: 15px;
-  width: 15px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
-  border-radius: 100px;
-  margin: 5px 2px;
 }
 
-.fa:hover{
+.font_awesome:hover{
   opacity: 0.7;
 }
 
-.fa-facebook{
-  background: #3B5998;
+.fa-facebook-f{
+  background: #1778F2;
   color: white;
 }
 
 .fa-instagram{
-  background: #125688;
+  background: #DD2A7B;
   color: white;
 }
 
 .fa-github{
-  background: #2c4762;
+  background: #211F1F;
   color: white;
 }
 
-.fa-linkedin{
-  background: #007bb5;
+.fa-linkedin-in{
+  background: #006192;
   color: white;
 }
 
-.fa-telegram{
-  background: #00aff0;
+.fa-telegram-plane{
+  background: #0088CC;
   color: white;
 }
 
 /* end text */
 .text{
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 14px;
   text-align: center;
   margin-bottom: auto;
