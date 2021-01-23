@@ -15,7 +15,7 @@ body, html{
 }
 
 .sideborder{
-  border-right: 4px solid #EE1D52;
+  border-right: 2px solid #EE1D52;
   height: 100vh;
 }
 
@@ -34,7 +34,6 @@ body, html{
   margin-bottom: 10px;
   transition-property: width height;
   transition-duration: 0.5s;
-  transition-delay: 0.5s;
 }
 
 .sidenavbar .profile .profile_avatar:hover{
@@ -53,7 +52,6 @@ body, html{
   margin-top: 20px;
   transition-property: color;
   transition-duration: 1s;
-  transition-delay: 0.5s;
 }
 
 .sidenavbar .profile h3:hover{
@@ -68,18 +66,6 @@ body, html{
   font-size: 14px;
   text-align: center;
   margin-bottom: 55px;
-}
-
-.text_margin{
-  margin-bottom: 90px;
-}
-
-/* top navbar text */
-.top_nav_text{
-  padding: 0px;
-  color: #FFFFFF;
-  text-align: center;
-  margin-right: auto;
 }
 
 /* side navbar content */
@@ -114,7 +100,6 @@ body, html{
   margin-right: 100px;
   transition-property: color;
   transition-duration: 1s;
-  transition-delay: 0.5s;
 }
 
 .main_text:hover{
@@ -178,7 +163,7 @@ body, html{
   }
 
   .bottomborder{
-    border-bottom: 4px solid #EE1D52;
+    border-bottom: 2px solid #EE1D52;
   }
 
   /* responsive dropdown bar */
@@ -197,7 +182,6 @@ body, html{
     border-radius: 50%;
     transition-property: width height;
     transition-duration: 0.5s;
-    transition-delay: 0.5s;
   }
 
   .nav_bar .top_nav_avatar:hover{
@@ -248,10 +232,42 @@ body, html{
     display: block;
   }
 
+  .tildisplay{
+    display: block!important;
+  }
+  
+  .tilicn{
+    font-size: 22px !important;
+    width: 30px !important;
+    margin-top: 15px !important;
+    margin-right: 34px !important;
+  }
+
+  .iconmrg{
+    margin-left: 0!important;
+  }
+
   .skill_background{
     width: 100% !important;
     margin-left: 0px !important;
   }
+}
+
+/* things i like */
+.tildisplay{
+  display: inline;
+}
+
+.tilicn{
+  width: 30px;
+  margin-top: 40px;
+  margin-right: 50px;
+  font-size: 30px;
+  color: #69C9D0;
+}
+
+.iconmrg{
+margin-left: 10px;
 }
 
 /* button */
@@ -259,9 +275,10 @@ body, html{
   background-color: #00000000;
   border: 1px solid #69C9D0;
   text-align: center;
-  text-decoration: none;
   border-radius: 2px;
   margin-right: 0;
+  height: 40px;
+  width: 70px;
   color: #FFFFFF;
 }
 
@@ -307,18 +324,6 @@ body, html{
 .mysql{
   width: 40%; 
   background-color: #00758F;
-}
-
-/* skill icon */
-.fa-js{
-  background: #000000;
-}
-
-.fa-php{
-  background: #787CB5;
-  width: 33px;
-  height: 17px;
-  border-radius: 49%;
 }
 
 /* footer */
@@ -388,4 +393,12 @@ body, html{
 /* link text decoration*/
 a:link{
   text-decoration: none;
+}
+
+#link{
+  text-decoration: none;
+}
+
+#link:hover{
+  text-decoration: underline;
 }
