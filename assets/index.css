@@ -1,8 +1,8 @@
 body, html{
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
-  background-color: #010101;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
 }
 
 /* side navbar */
@@ -11,11 +11,11 @@ body, html{
   position: fixed;
   width: 250px;
   height: 100%;
-  background-color: #010101; 
+  background-color: #0B5345; 
 }
 
 .sideborder{
-  border-right: 2px solid #EE1D52;
+  border-right: 2px solid #FA8072;
   height: 100vh;
 }
 
@@ -30,7 +30,7 @@ body, html{
 .sidenavbar .profile .profile_avatar{
   width: 170px;
   height: 170px;
-  border-radius: 100px;
+  border-radius: 50%;
   margin-bottom: 10px;
   transition-property: width height;
   transition-duration: 0.5s;
@@ -39,29 +39,22 @@ body, html{
 .sidenavbar .profile .profile_avatar:hover{
   width: 208px;
   height: 208px;
-  border-radius: 10px;
+  border-radius: 50%;
   margin-bottom: 10px;
   cursor: none;
 }
 
 .sidenavbar .profile h3{
-  color: #69C9D0;
+  color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: normal;
   margin-top: 20px;
-  transition-property: color;
-  transition-duration: 1s;
-}
-
-.sidenavbar .profile h3:hover{
-  color: #EE1D52;
-  cursor: none;
 }
 
 /* side navbar text */
 .about{
-  color: #69C9D0;
+  color: #FFFFFF;
   margin-top: 0;
   font-size: 14px;
   text-align: center;
@@ -74,37 +67,29 @@ body, html{
   display: block;
   width: 100%;
   line-height: 60px;
-  text-decoration: none;
+  text-decoration: none !important;
   padding-left: 40px;
   box-sizing: border-box;
 }
 
 .sidenavbar a:hover{
-  color: #EE1D52;
+  opacity: 0.7;
 }
 
 .sidenavbar i{
   padding-right: 10px;
-  color: #69C9D0;
+  color: #FFFFFF;
 }
 
 /* main content */
 .content{
   margin-left: 250px;
-  color: #FFFFFF;
 }
 
 .main_text{
-  color: #69C9D0; 
+  color: #0B5345; 
   margin-left: 100px;
   margin-right: 100px;
-  transition-property: color;
-  transition-duration: 1s;
-}
-
-.main_text:hover{
-  color: #EE1D52;
-  cursor: none;
 }
 
 .top_nav{
@@ -119,14 +104,14 @@ body, html{
 }
 
 .sec_bg{
-  background-color: #11111180;
+  background-color: #F7F7F7;
   padding: 10px;
   border-radius: 2px;
 }
 
 /* responsive css */
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 1280px){
   
   .sidenavbar{
     display: none;
@@ -163,12 +148,12 @@ body, html{
   }
 
   .bottomborder{
-    border-bottom: 2px solid #EE1D52;
+    border-bottom: 2px solid #FA8072;
   }
 
   /* responsive dropdown bar */
   .nav_bar{
-    background-color: #010101; 
+    background-color: #0B5345; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,8 +172,7 @@ body, html{
   .nav_bar .top_nav_avatar:hover{
     width: 60px;
     height: 60px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 50%;
     cursor: none;
   }
   
@@ -198,14 +182,9 @@ body, html{
     cursor: pointer;
   }
 
-  .nav_bar .nav_btn:hover{
-    color: #69C9D0;
-    cursor: pointer;
-  } 
-
   /* navbar contents */
   .top_nav_items{
-    background-color: #010101; 
+    background-color: #0B5345; 
     display: none;
   }
 
@@ -220,12 +199,12 @@ body, html{
   }
 
   .top_nav_items a:hover{
-    color: #EE1D52;
+    opacity: 0.7;
   }
 
   .top_nav_items i{
     padding-right: 10px;
-    color: #69C9D0;
+    color: #FFFFFF;
   }
 
   .active{
@@ -238,18 +217,26 @@ body, html{
   
   .tilicn{
     font-size: 22px !important;
-    width: 30px !important;
+    width: 25px !important;
     margin-top: 15px !important;
-    margin-right: 34px !important;
+    margin-right: 20px !important;
   }
 
-  .iconmrg{
-    margin-left: 0!important;
+  .tilicnbg{
+    padding: 10px !important;
+  }
+
+  .fa-playstation{
+    margin-left: 0px !important;
+  }
+
+  .fa-image{
+    margin-left: 0px !important;
   }
 
   .skill_background{
     width: 100% !important;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
   }
 }
 
@@ -260,38 +247,73 @@ body, html{
 
 .tilicn{
   width: 30px;
-  margin-top: 40px;
-  margin-right: 50px;
-  font-size: 30px;
-  color: #69C9D0;
+  margin-top: 30px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #0B5345;
 }
 
-.iconmrg{
-margin-left: 10px;
+.tilicnbg{
+  padding: 12px;
+  width: 25px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-code{
+  background: #0B5345;
+  color: white;
+}
+
+.fa-playstation{
+  background: #0B5345;
+  color: white;
+  margin-left: 8px;
+}
+
+.fa-headphones-alt{
+  background: #0B5345;
+  color: white;
+}
+
+.fa-cog{
+  background: #0B5345;
+  color: white;
+}
+
+.fa-mobile-alt {
+  background: #0B5345;
+  color: white;
+}
+
+.fa-image{
+  background: #0B5345;
+  color: white;
+  margin-left: 11px;
 }
 
 /* button */
 .button{
-  background-color: #00000000;
-  border: 1px solid #69C9D0;
+  background-color: #FFFFFF00;
+  border: 1px solid #0B5345;
   text-align: center;
   border-radius: 2px;
   margin-right: 0;
   height: 40px;
   width: 70px;
-  color: #FFFFFF;
+  color: #0B5345;
 }
 
-.button1:hover{
-  border: 1px solid #EE1D52;
-  color: #FFFFFF;
+.button:hover{
+  opacity: 0.7;
   cursor: pointer;
 }
 
 /* skill bar */
 .skill_background{
   width: 80%;
-  background-color: #FFFFFFAB;
+  background-color: #00000027;
   margin-left: 100px;
   border-radius: 2px;
 }
@@ -324,6 +346,17 @@ margin-left: 10px;
 .mysql{
   width: 40%; 
   background-color: #00758F;
+}
+
+.fa-js{
+  background-color: #000000;
+}
+
+.fa-php{
+  background-color: #787CB5;
+  height: 18px;
+  width:33px;
+  border-radius: 49%;
 }
 
 /* footer */
@@ -387,7 +420,6 @@ margin-left: 10px;
   font-size: 12px !important;
   text-align: center;
   margin-bottom: auto;
-  color: #69C9D0;
 }
 
 /* link text decoration*/
@@ -395,10 +427,6 @@ a:link{
   text-decoration: none;
 }
 
-#link{
-  text-decoration: none;
-}
-
-#link:hover{
+a:hover{
   text-decoration: underline;
 }
