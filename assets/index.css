@@ -111,7 +111,7 @@ body, html{
 
 /* responsive css */
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 812px){
   
   .sidenavbar{
     display: none;
@@ -194,7 +194,7 @@ body, html{
     text-align: center;
     letter-spacing: 1px;
     line-height: 60px;
-    text-decoration: none;
+    text-decoration: none!important;
     box-sizing: border-box;
   }
 
