@@ -11,7 +11,7 @@ body, html{
   position: fixed;
   width: 250px;
   height: 100%;
-  background-color: #0B5345; 
+  background-color: #000000; 
 }
 
 .sideborder{
@@ -81,13 +81,68 @@ body, html{
   color: #FFFFFF;
 }
 
+/* side image */
+.image{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/collection/49492594/1600x900");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image p{
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: .15em;
+}
+
+/* typewriter text */
+.typewriter h1{
+  color: #FFFFFF;
+  font-size: 58px;
+  overflow: hidden;
+  border-right: .15em solid #FFFFFF;
+  white-space: nowrap;
+  margin: 25% 30% 0 30%;
+  letter-spacing: .15em;
+  animation: typing 4.6s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+@keyframes typing{
+  from {width: 0}
+  to {width: 40%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: #FFFFFF}
+}
+
+/* side image button */
+.sideimgbtn{
+  background-color: #00000000;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 16%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+
+.sideimgbtn:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /* main content */
 .content{
   margin-left: 250px;
 }
 
 .main_text{
-  color: #0B5345; 
+  color: #000000; 
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -121,6 +176,30 @@ body, html{
     display: none;
   }
   
+  /* side image text */ 
+  .image p{
+    font-size: 14px !important;
+  }
+
+  /* typewriter text */
+  .typewriter h1{
+    font-size: 38px;
+    margin: 85% 0 0 8%;
+  }
+
+  @keyframes typing{
+    from{width: 0}
+    to {width: 95%}
+  }
+  
+  /* side image button */
+  .sideimgbtn{
+    margin-left: 42% !important;
+    margin-top: 60% !important;
+    height: 50px !important;
+    width: 50px !important;
+  }
+
   /* content area */
   .content{
     margin: 0;
@@ -153,7 +232,7 @@ body, html{
 
   /* responsive dropdown bar */
   .nav_bar{
-    background-color: #0B5345; 
+    background-color: #000000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,7 +263,7 @@ body, html{
 
   /* navbar contents */
   .top_nav_items{
-    background-color: #0B5345; 
+    background-color: #000000; 
     display: none;
   }
 
@@ -250,7 +329,7 @@ body, html{
   margin-top: 30px;
   margin-right: 25px;
   font-size: 20px;
-  color: #0B5345;
+  color: #000000;
 }
 
 .tilicnbg{
@@ -262,33 +341,33 @@ body, html{
 }
 
 .fa-code{
-  background: #0B5345;
+  background: #000000;
   color: white;
 }
 
 .fa-playstation{
-  background: #0B5345;
+  background: #000000;
   color: white;
   margin-left: 8px;
 }
 
 .fa-headphones-alt{
-  background: #0B5345;
+  background: #000000;
   color: white;
 }
 
 .fa-cog{
-  background: #0B5345;
+  background: #000000;
   color: white;
 }
 
 .fa-mobile-alt {
-  background: #0B5345;
+  background: #000000;
   color: white;
 }
 
 .fa-image{
-  background: #0B5345;
+  background: #000000;
   color: white;
   margin-left: 11px;
 }
@@ -296,13 +375,13 @@ body, html{
 /* button */
 .button{
   background-color: #FFFFFF00;
-  border: 1px solid #0B5345;
+  border: 1px solid #000000;
   text-align: center;
   border-radius: 2px;
   margin-right: 0;
   height: 40px;
   width: 70px;
-  color: #0B5345;
+  color: #000000;
 }
 
 .button:hover{
