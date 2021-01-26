@@ -1,6 +1,7 @@
 body, html{
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
 }
@@ -10,13 +11,8 @@ body, html{
   padding-top: 67px;
   position: fixed;
   width: 250px;
-  height: 100%;
-  background-color: #000000; 
-}
-
-.sideborder{
-  border-right: 2px solid #FA8072;
   height: 100vh;
+  background-color: #000000; 
 }
 
 /* profile, avatar */
@@ -83,52 +79,42 @@ body, html{
 
 /* side image */
 .image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/collection/49492594/1600x900");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://38.media.tumblr.com/8b4a2859adf37842c6f5d38f360097c3/tumblr_nm18vkEP9l1qjjl87o1_r1_540.gif");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.image p{
-  color: #FFFFFF;
-  text-align: center;
-  letter-spacing: .15em;
-}
-
 /* typewriter text */
-.typewriter h1{
+.top_text{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.typewrite{
+  text-align: center;
   color: #FFFFFF;
-  font-size: 58px;
-  overflow: hidden;
-  border-right: .15em solid #FFFFFF;
-  white-space: nowrap;
-  margin: 25% 30% 0 30%;
-  letter-spacing: .15em;
-  animation: typing 4.6s steps(30, end), blink-caret .5s step-end infinite;
 }
 
-@keyframes typing{
-  from {width: 0}
-  to {width: 40%}
-}
-
-@keyframes blink-caret{
-  from, to {border-color: transparent}
-  50% {border-color: #FFFFFF}
+.abs-center-x{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* side image button */
 .sideimgbtn{
   background-color: #00000000;
-  border: 1px solid #FFFFFF;
+  border: none;
   text-align: center;
-  margin-left: 45%;
-  margin-top: 16%;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  color: #FFFFFF;
+  margin-top: 120px;
+  height: 65px;
+  width: 25px;
 }
 
 .sideimgbtn:hover{
@@ -142,9 +128,9 @@ body, html{
 }
 
 .main_text{
-  color: #000000; 
-  margin-left: 100px;
-  margin-right: 100px;
+color: #000000;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .top_nav{
@@ -154,8 +140,8 @@ body, html{
 
 .content .card p{
   font-size: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .sec_bg{
@@ -172,32 +158,25 @@ body, html{
     display: none;
   }
 
-  .sideborder{
-    display: none;
-  }
-  
-  /* side image text */ 
-  .image p{
-    font-size: 14px !important;
-  }
-
   /* typewriter text */
-  .typewriter h1{
-    font-size: 38px;
-    margin: 85% 0 0 8%;
+  .top_text{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: white;
   }
 
-  @keyframes typing{
-    from{width: 0}
-    to {width: 95%}
-  }
-  
   /* side image button */
   .sideimgbtn{
-    margin-left: 42% !important;
-    margin-top: 60% !important;
-    height: 50px !important;
-    width: 50px !important;
+    margin-top: 50px !important;
+    height: 65px !important;
+    width: 25px !important;
+  }
+
+  .button-margin{
+    margin-left: 0 !important;
   }
 
   /* content area */
@@ -224,10 +203,6 @@ body, html{
     display: block;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .bottomborder{
-    border-bottom: 2px solid #FA8072;
   }
 
   /* responsive dropdown bar */
@@ -340,48 +315,52 @@ body, html{
   text-decoration: none;
 }
 
-.fa-code{
-  background: #000000;
-  color: white;
+.fa-laptop-code{
+  background-color: #000000;
+  color:#FFFFFF;
 }
 
 .fa-playstation{
-  background: #000000;
-  color: white;
+  background-color: #000000;
+  color:#FFFFFF;
   margin-left: 8px;
 }
 
 .fa-headphones-alt{
-  background: #000000;
-  color: white;
+  background-color: #000000;
+  color:#FFFFFF;
 }
 
 .fa-cog{
-  background: #000000;
-  color: white;
+  background-color: #000000;
+  color:#FFFFFF;
 }
 
 .fa-mobile-alt {
-  background: #000000;
-  color: white;
+  background-color: #000000;
+  color:#FFFFFF;
 }
 
 .fa-image{
-  background: #000000;
-  color: white;
+  background-color: #000000;
+  color:#FFFFFF;
   margin-left: 11px;
 }
 
 /* button */
 .button{
-  background-color: #FFFFFF00;
-  border: 1px solid #000000;
+  background-color: #000000;
+  border: none;
   text-align: center;
   border-radius: 2px;
   margin-right: 0;
   height: 40px;
   width: 70px;
-  color: #000000;
+  color: #FFFFFF;
+}
+
+.button-margin{
+  margin-left: 50px;
 }
 
 .button:hover{
@@ -391,9 +370,9 @@ body, html{
 
 /* skill bar */
 .skill_background{
-  width: 80%;
+  width: 85%;
   background-color: #00000027;
-  margin-left: 100px;
+  margin-left: 50px;
   border-radius: 2px;
 }
 
