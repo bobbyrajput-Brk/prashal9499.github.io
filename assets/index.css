@@ -4,6 +4,7 @@ body, html{
   height: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 
 /* side navbar */
@@ -64,7 +65,7 @@ body, html{
   width: 100%;
   line-height: 60px;
   text-decoration: none !important;
-  padding-left: 40px;
+  padding-left: 65px;
   box-sizing: border-box;
 }
 
@@ -79,7 +80,7 @@ body, html{
 
 /* side image */
 .image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://38.media.tumblr.com/8b4a2859adf37842c6f5d38f360097c3/tumblr_nm18vkEP9l1qjjl87o1_r1_540.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/collection/49492594/1600x900");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,8 +91,9 @@ body, html{
 .top_text{
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 60%;
   left: 50%;
+  letter-spacing: .10em;
   transform: translate(-50%, -50%);
   color: white;
 }
