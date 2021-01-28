@@ -406,6 +406,7 @@ color: #000000;
   background-color: #00758F;
 }
 
+/* skill bar icons */
 .fa-js{
   background-color: #000000;
 }
@@ -485,6 +486,6 @@ a:link{
   text-decoration: none;
 }
 
-a:hover{
+p a:hover{
   text-decoration: underline;
 }
