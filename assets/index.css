@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* root variables */
 :root {
   --primary: #2dbff8;
   --secondary: #e4c083;
@@ -17,6 +18,7 @@ html {
   --font-light: #ffffff;
   --border-primary: #08aae3;
 }
+
 /* side navbar */
 .sidenavbar {
   padding-top: 67px;
@@ -108,6 +110,10 @@ html {
   color: var(--font-light) !important;
 }
 
+.sub-text {
+  color: var(--font-light) !important;
+}
+
 .typewrite {
   text-align: center;
   font-size: 50px !important;
@@ -136,11 +142,16 @@ html {
   cursor: pointer;
 }
 
+.fa-chevron-down {
+  color: #ffffff;
+}
+
 /* main content */
 .content {
   margin-left: 250px;
 }
 
+/* margin and padding */
 .p-1 {
   padding: 10px;
 }
@@ -149,6 +160,7 @@ html {
   margin-top: 40px;
 }
 
+/* content */
 .main_text {
   color: var(--font-dark);
   margin-left: 50px;
@@ -169,6 +181,7 @@ html {
 
 /* responsive css */
 @media screen and (max-width: 812px) {
+  /* sidebar */
   .sidenavbar {
     display: none;
   }
@@ -281,6 +294,7 @@ html {
     display: block;
   }
 
+  /* things i like */
   .tildisplay {
     display: block !important;
   }
@@ -309,6 +323,7 @@ html {
     margin-left: 0 !important;
   }
 
+  /* project section grid */
   .container {
     grid-template-areas:
       "item1"
@@ -449,7 +464,6 @@ html {
 }
 
 /* skill bar icons */
-
 .fa-html5 {
   color: #f16529;
 }
@@ -587,6 +601,11 @@ p a:hover {
   text-decoration: underline;
 }
 
+p a {
+  color: var(--secondary);
+}
+
+/* project section grid */
 .container {
   display: grid;
   grid-gap: 1rem;
@@ -606,7 +625,7 @@ p a:hover {
 }
 
 .item:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 #item1 {
@@ -630,12 +649,4 @@ p a:hover {
 
 section article .fa-github {
   background: none;
-}
-
-p a {
-  color: var(--secondary);
-}
-
-.fa-chevron-down {
-  color: #ffffff;
 }
