@@ -15,7 +15,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -64,7 +64,7 @@ html {
 .about {
   color: var(--secondary);
   margin-top: 0;
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: center;
   margin-bottom: 55px;
 }
@@ -103,7 +103,7 @@ html {
 .top_text {
   text-align: center;
   position: relative;
-  top: 60%;
+  top: 40%;
   left: 50%;
   letter-spacing: 0.1em;
   transform: translate(-50%, -50%);
@@ -122,25 +122,45 @@ html {
   transform: translateX(-50%);
 }
 
-/* side image button */
-.sideimgbtn {
-  background: none;
-  border: none;
-  text-align: center;
-  margin-top: 120px;
-  height: 65px;
-  width: 25px;
-  outline: none;
-  transition: 0.4s;
+/* scroll button */
+.btn-scroll {
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  transform: translate(-50%, -50%);
 }
 
-.sideimgbtn:hover {
-  opacity: 0.7;
-  cursor: pointer;
+.mouse {
+  width: 32px;
+  height: 58px;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
 }
 
-.fa-chevron-down {
-  color: #ffffff;
+.mouse::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  background: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  opacity: 1;
+  animation: mouse 1.5s infinite;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 5px;
+  }
+
+  to {
+    opacity: 0;
+    top: 50px;
+  }
 }
 
 /* main content */
@@ -175,6 +195,14 @@ html {
   margin-right: 50px;
   color: var(--font-secondary);
   transition: 0.4s;
+}
+
+.bg-card {
+  padding: 10px 0;
+  margin: 40px;
+  background: #ffffff;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 /* icons */
@@ -212,7 +240,7 @@ html {
 .fa-playstation {
   background-color: #006fcd;
   color: var(--font-light);
-  margin-left: -8px;
+  margin-left: -16px;
 }
 
 .fa-spotify {
@@ -233,7 +261,7 @@ html {
 .fa-image {
   background-color: #3c327b;
   color: var(--font-light);
-  margin-left: 11px;
+  margin-left: 8.5px;
 }
 
 /* project section grid */
@@ -306,71 +334,134 @@ html {
 }
 
 /* skill bar */
-.skill_background {
-  width: 91%;
-  background-color: #00000022;
-  margin-left: 50px;
-  border-radius: 10px;
+.skill-bars {
+  margin: 0 58px;
 }
 
-.skills_bar {
-  padding: 10px;
-  border-radius: 10px;
+.skill-bars .bar {
+  margin: 20px 0;
+  padding: 0 0 20px 0;
 }
 
-.html {
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 1.25em;
+  color: var(--font-secondary);
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--primary);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
   width: 90%;
-  background-color: #f16529;
 }
-
-.css {
+.bar .progress-line.css span {
   width: 75%;
-  background-color: #2565ae;
 }
-
-.js {
+.bar .progress-line.js span {
   width: 45%;
-  background-color: #f0db4f;
 }
-
-.php {
+.bar .progress-line.php span {
   width: 65%;
-  background-color: #787cb5;
 }
-
-.mysql {
+.bar .progress-line.mysql span {
   width: 50%;
-  background-color: #00758f;
 }
 
-/* skill bar icons */
-.fa-html5 {
-  color: #f16529;
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 12px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 6px;
+  border-top-color: #000000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
 }
 
-.fa-css3-alt {
-  color: #2565ae;
+.progress-line span::after {
+  position: absolute;
+  top: -36px;
+  right: 0;
+  font-weight: 500;
+  background: #000000;
+  color: #ffffff;
+  padding: 5px 8px;
+  font-size: 0.75em;
+  border-radius: 20px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
 }
 
-.fa-js {
-  color: #f0db4f;
-  background-color: var(--dark);
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
 }
 
-.fa-php {
-  background-color: #787cb5;
-  height: 18px;
-  width: 33px;
-  border-radius: 49%;
-  color: var(--dark);
+.progress-line.html span::after {
+  content: "90%";
 }
-
-.fa-database {
-  color: #00758f;
+.progress-line.css span::after {
+  content: "75%";
+}
+.progress-line.js span::after {
+  content: "45%";
+}
+.progress-line.php span::after {
+  content: "65%";
+}
+.progress-line.mysql span::after {
+  content: "50%";
 }
 
 /* tools & technoligies */
-
 .fa-bootstrap {
   background-color: #553c7b;
   color: var(--font-light);
@@ -379,7 +470,7 @@ html {
 .fa-file-code {
   background-color: #0066b8;
   color: var(--font-light);
-  margin-left: -17px;
+  margin-left: -19px;
 }
 
 .fa-sass {
@@ -390,7 +481,7 @@ html {
 .fa-terminal {
   background-color: #28323c;
   color: var(--font-light);
-  margin-left: 20px;
+  margin-left: 27px;
 }
 
 .fa-github-alt {
@@ -536,21 +627,22 @@ p a {
   .top_text {
     text-align: center;
     position: relative;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -40%);
     color: var(--font-light);
   }
 
-  /* side image button */
-  .sideimgbtn {
-    margin-top: 50px !important;
-    height: 65px !important;
-    width: 25px !important;
+  /* scroll button */
+  .btn-scroll {
+    position: absolute;
+    top: 80%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
   }
 
   .button-margin {
-    margin-left: 0 !important;
+    margin: 0;
   }
 
   /* content area */
@@ -569,6 +661,11 @@ p a {
   .main_text {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .bg-card {
+    margin: 10px !important;
+    padding: 10px !important;
   }
 
   /* top navbar */
@@ -679,9 +776,8 @@ p a {
   }
 
   /* skill bar */
-  .skill_background {
-    width: 100% !important;
-    margin-left: 0 !important;
+  .skill-bars {
+    margin: 10px;
   }
 
   /* tools & technoligies */
