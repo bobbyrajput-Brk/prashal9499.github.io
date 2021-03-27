@@ -2,11 +2,10 @@
 :root {
   --primary: #2dbff8;
   --secondary: #e4c083;
+  --light: #ffffff;
   --dark: #000000;
   --font-dark: #181818;
   --font-secondary: #797979;
-  --font-light: #ffffff;
-  --border-primary: #08aae3;
 }
 
 /* css main */
@@ -53,7 +52,7 @@ html {
 }
 
 .sidenavbar .profile h3 {
-  color: var(--font-light);
+  color: var(--light);
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: normal;
@@ -71,7 +70,7 @@ html {
 
 /* side navbar content */
 .sidenavbar a {
-  color: var(--font-light);
+  color: var(--light);
   display: block;
   width: 100%;
   line-height: 60px;
@@ -87,7 +86,7 @@ html {
 
 .sidenavbar i {
   padding-right: 10px;
-  color: var(--font-light);
+  color: var(--light);
 }
 
 /* side image */
@@ -107,13 +106,13 @@ html {
   left: 50%;
   letter-spacing: 0.1em;
   transform: translate(-50%, -50%);
-  color: var(--font-light) !important;
+  color: var(--light) !important;
 }
 
 .typewrite {
   text-align: center;
   font-size: 1.8em !important;
-  color: var(--font-light) !important;
+  color: var(--light) !important;
 }
 
 .abs-center-x {
@@ -201,7 +200,7 @@ html {
   padding: 10px 0;
   margin: 40px;
   background: #ffffff;
-  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
@@ -220,47 +219,48 @@ html {
 }
 
 .icon-bg {
-  padding: 22px;
-  width: 22px;
-  border-radius: 50px;
+  padding: 20px 16px;
+  border-radius: 16px;
   text-align: center;
   text-decoration: none;
 }
 
-.icon-bg:hover {
-  box-shadow: 2px 2px 50px var(--secondary);
-}
-
 /* things i like */
 .fa-laptop-code {
-  background-color: #010a14;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #010a14;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-playstation {
-  background-color: #006fcd;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #006fcd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: -16px;
 }
 
 .fa-spotify {
-  background-color: #1ed761;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #1ed761;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-cog {
-  background-color: #cc0000;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #cc0000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-mobile-alt {
-  background-color: #872ec4;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #872ec4;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-image {
-  background-color: #3c327b;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #3c327b;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 8.5px;
 }
 
@@ -276,15 +276,15 @@ html {
 }
 
 .item {
-  background: var(--font-light);
+  background: var(--light);
   border-radius: 20px;
   transition: 0.4s;
   padding: 20px 0 40px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .item:hover {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 #item1 {
@@ -309,13 +309,13 @@ html {
 /* button */
 .button {
   background: none;
-  border: 1px solid var(--border-primary);
+  border: 1px solid var(--primary);
   text-align: center;
   border-radius: 20px;
   margin-right: 0;
   height: 40px;
   width: 70px;
-  color: var(--border-primary);
+  color: var(--primary);
   transition: 0.4s;
   text-decoration: none;
   outline: none;
@@ -328,7 +328,7 @@ html {
 .button:hover {
   background: var(--primary);
   border: 1px solid var(--primary);
-  color: var(--font-light);
+  color: var(--light);
   cursor: pointer;
   text-decoration: none;
 }
@@ -420,7 +420,7 @@ html {
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 6px;
-  border-top-color: #000000;
+  border-top-color: var(--dark);
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -430,8 +430,8 @@ html {
   top: -36px;
   right: 0;
   font-weight: 500;
-  background: #000000;
-  color: #ffffff;
+  background: var(--dark);
+  color: var(--light);
   padding: 5px 8px;
   font-size: 0.75em;
   border-radius: 20px;
@@ -463,35 +463,41 @@ html {
 
 /* tools & technoligies */
 .fa-bootstrap {
-  background-color: #553c7b;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #553c7b;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-file-code {
-  background-color: #0066b8;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #0066b8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: -19px;
 }
 
 .fa-sass {
-  background-color: #cd6799;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #cd6799;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-terminal {
-  background-color: #28323c;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #28323c;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 27px;
 }
 
 .fa-github-alt {
-  background-color: #211f1f;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #211f1f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-ubuntu {
-  background-color: #dd4814;
-  color: var(--font-light);
+  background-color: var(--light);
+  color: #dd4814;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 11px;
 }
 
@@ -507,96 +513,88 @@ html {
 /* social media icons */
 .social_icons {
   height: 10px;
-  width: 40px;
+  width: 50px;
   border-radius: 50px;
   text-align: left;
 }
 
 .font_awesome {
-  padding: 10px;
-  width: 20px;
+  padding: 15px 10px;
+  width: 25px;
   text-align: center;
   text-decoration: none;
 }
 
+.icon-card {
+  background: var(--light);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 .fa-facebook-f {
-  background: none;
+  background: #ffffff;
   color: #1778f2;
-  border-top: 1px solid #1778f2;
-  border-bottom: 1px solid #1778f2;
-  border-left: 1px solid #1778f2;
-  border-radius: 16px 0px 0px 16px;
+  border-radius: 16px;
   transition: 0.4s;
 }
 
 .fa-facebook-f:hover {
   background: #1778f2;
-  color: var(--font-light);
-  border-radius: 16px 0px 0px 16px;
+  color: var(--light);
 }
 
 .fa-instagram {
-  background: none;
+  background: #ffffff;
   color: #dd2a7b;
-  border-top: 1px solid #dd2a7b;
-  border-bottom: 1px solid #dd2a7b;
+  border-radius: 16px;
   transition: 0.4s;
 }
 
 .fa-instagram:hover {
   background: #dd2a7b;
-  color: var(--font-light);
+  color: var(--light);
 }
 
 .fa-github-square {
-  background: none;
+  background: #ffffff;
   color: #211f1f;
-  border-top: 1px solid #211f1f;
-  border-bottom: 1px solid #211f1f;
+  border-radius: 16px;
   transition: 0.4s;
 }
 
 .fa-github-square:hover {
   background: #211f1f;
-  color: var(--font-light);
+  color: var(--light);
 }
 
 .fa-linkedin-in {
-  background: none;
+  background: #ffffff;
   color: #006192;
-  border-top: 1px solid #006192;
-  border-bottom: 1px solid #006192;
+  border-radius: 16px;
   transition: 0.4s;
 }
 
 .fa-linkedin-in:hover {
   background: #006192;
-  color: var(--font-light);
+  color: var(--light);
 }
 
 .fa-telegram-plane {
-  background: none;
+  background: #ffffff;
   color: #0088cc;
-  border-top: 1px solid #0088cc;
-  border-right: 1px solid #0088cc;
-  border-bottom: 1px solid #0088cc;
-  border-radius: 0px 16px 16px 0px;
+  border-radius: 16px;
   transition: 0.4s;
 }
 
 .fa-telegram-plane:hover {
   background: #0088cc;
-  color: var(--font-light);
-  border-radius: 0px 16px 16px 0px;
+  color: var(--light);
 }
 
 /* end text */
 .text {
-  color: var(--secondary) !important;
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 0.8em !important;
   text-align: center;
-  margin-bottom: 10px !important;
 }
 
 .fa-copyright {
@@ -630,15 +628,12 @@ p a {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -40%);
-    color: var(--font-light);
+    color: var(--light);
   }
 
   /* scroll button */
   .btn-scroll {
-    position: absolute;
-    top: 80%;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
+    display: none;
   }
 
   .button-margin {
@@ -700,7 +695,7 @@ p a {
 
   /* dropdown button */
   .nav_bar .nav_btn {
-    color: var(--font-light);
+    color: var(--light);
     cursor: pointer;
   }
 
@@ -711,7 +706,7 @@ p a {
   }
 
   .top_nav_items a {
-    color: var(--font-light);
+    color: var(--light);
     display: block;
     text-align: center;
     letter-spacing: 1px;
@@ -727,7 +722,7 @@ p a {
 
   .top_nav_items i {
     padding-right: 10px;
-    color: var(--font-light);
+    color: var(--light);
   }
 
   .active {
@@ -744,10 +739,6 @@ p a {
     width: 25px !important;
     margin-top: 15px !important;
     margin-right: 20px !important;
-  }
-
-  .icon-bg {
-    padding: 16px !important;
   }
 
   /* things i like */
