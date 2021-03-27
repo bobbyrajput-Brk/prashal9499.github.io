@@ -17,6 +17,8 @@ html {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  height: 100vh;
+  transition: 0.4s;
 }
 
 /* side navbar */
@@ -89,11 +91,11 @@ html {
   color: var(--light);
 }
 
-/* side image */
+/* top image */
 .image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://source.unsplash.com/collection/49492594/1600x1600") no-repeat
-      center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://source.unsplash.com/1_CMoFsPfso/1600x900") no-repeat center
+      center/cover;
   height: 100vh;
   transition: 0.4s;
 }
@@ -133,7 +135,7 @@ html {
   width: 32px;
   height: 58px;
   border-radius: 100px;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--light);
 }
 
 .mouse::before {
@@ -142,7 +144,7 @@ html {
   height: 10px;
   position: absolute;
   top: 20px;
-  background: #ffffff;
+  background: var(--light);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100%;
@@ -199,7 +201,7 @@ html {
 .bg-card {
   padding: 10px 0;
   margin: 40px;
-  background: #ffffff;
+  background: var(--light);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
@@ -531,9 +533,9 @@ html {
 }
 
 .fa-facebook-f {
-  background: #ffffff;
+  background: var(--light);
   color: #1778f2;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: 0.4s;
 }
 
@@ -543,9 +545,9 @@ html {
 }
 
 .fa-instagram {
-  background: #ffffff;
+  background: var(--light);
   color: #dd2a7b;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: 0.4s;
 }
 
@@ -555,9 +557,9 @@ html {
 }
 
 .fa-github-square {
-  background: #ffffff;
+  background: var(--light);
   color: #211f1f;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: 0.4s;
 }
 
@@ -567,9 +569,9 @@ html {
 }
 
 .fa-linkedin-in {
-  background: #ffffff;
+  background: var(--light);
   color: #006192;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: 0.4s;
 }
 
@@ -579,9 +581,9 @@ html {
 }
 
 .fa-telegram-plane {
-  background: #ffffff;
+  background: var(--light);
   color: #0088cc;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: 0.4s;
 }
 
@@ -620,12 +622,20 @@ p a {
   .sidenavbar {
     display: none;
   }
+  /* top image */
+  .image {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("https://source.unsplash.com/1_CMoFsPfso/900x1600") no-repeat center
+        center/cover;
+    height: 100vh;
+    transition: 0.4s;
+  }
 
   /* typewriter text */
   .top_text {
     text-align: center;
     position: relative;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -40%);
     color: var(--light);
