@@ -1,7 +1,7 @@
 /* root variables */
 :root {
-  --primary: #2dbff8;
-  --secondary: #e4c083;
+  --primary: #d399fa;
+  --secondary: #8364e8;
   --light: #ffffff;
   --dark: #000000;
   --font-dark: #181818;
@@ -19,6 +19,12 @@ html {
   scroll-behavior: smooth;
   height: 100vh;
   transition: 0.4s;
+  background: hsla(276, 91%, 79%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 0%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
 }
 
 /* side navbar */
@@ -63,7 +69,7 @@ html {
 
 /* side navbar text */
 .about {
-  color: var(--secondary);
+  color: var(--primary);
   margin-top: 0;
   font-size: 0.9em;
   text-align: center;
@@ -83,7 +89,7 @@ html {
 }
 
 .sidenavbar a:hover {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 .sidenavbar i {
@@ -91,11 +97,8 @@ html {
   color: var(--light);
 }
 
-/* top image */
-.image {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("https://source.unsplash.com/1_CMoFsPfso/1600x900") no-repeat center
-      center/cover;
+/* top area */
+.top-area {
   height: 100vh;
   transition: 0.4s;
 }
@@ -108,13 +111,13 @@ html {
   left: 50%;
   letter-spacing: 0.1em;
   transform: translate(-50%, -50%);
-  color: var(--light) !important;
+  color: var(--dark) !important;
 }
 
 .typewrite {
   text-align: center;
   font-size: 1.8em !important;
-  color: var(--light) !important;
+  color: var(--dark) !important;
 }
 
 .abs-center-x {
@@ -135,7 +138,7 @@ html {
   width: 32px;
   height: 58px;
   border-radius: 100px;
-  border: 2px solid var(--light);
+  border: 2px solid var(--dark);
 }
 
 .mouse::before {
@@ -144,7 +147,7 @@ html {
   height: 10px;
   position: absolute;
   top: 20px;
-  background: var(--light);
+  background: var(--dark);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100%;
@@ -201,8 +204,9 @@ html {
 .bg-card {
   padding: 10px 0;
   margin: 40px;
-  background: var(--light);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
 }
 
@@ -222,47 +226,54 @@ html {
 
 .icon-bg {
   padding: 20px 16px;
-  border-radius: 16px;
+  border-radius: 20px;
   text-align: center;
   text-decoration: none;
 }
 
 /* things i like */
 .fa-laptop-code {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #010a14;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-playstation {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #006fcd;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
   margin-left: -16px;
 }
 
 .fa-spotify {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #1ed761;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-cog {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #cc0000;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-mobile-alt {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #872ec4;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-image {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #3c327b;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 8.5px;
 }
 
@@ -278,11 +289,12 @@ html {
 }
 
 .item {
-  background: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   transition: 0.4s;
   padding: 20px 0 40px 0;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .item:hover {
@@ -376,7 +388,7 @@ html {
   transform-origin: left;
   border-radius: 20px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
-    0 1px rgba(255, 255, 255, 0.8);
+    0 1px rgba(255, 255, 255, 0.3);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
@@ -465,41 +477,47 @@ html {
 
 /* tools & technoligies */
 .fa-bootstrap {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #553c7b;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-file-code {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #0066b8;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: -19px;
 }
 
 .fa-sass {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #cd6799;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-terminal {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #28323c;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 27px;
 }
 
 .fa-github-alt {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #211f1f;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-ubuntu {
-  background-color: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #dd4814;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 11px;
 }
 
@@ -528,14 +546,17 @@ html {
 }
 
 .icon-card {
-  background: var(--light);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .fa-facebook-f {
-  background: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #1778f2;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: 0.4s;
 }
 
@@ -545,9 +566,11 @@ html {
 }
 
 .fa-instagram {
-  background: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #dd2a7b;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: 0.4s;
 }
 
@@ -557,9 +580,11 @@ html {
 }
 
 .fa-github-square {
-  background: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #211f1f;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: 0.4s;
 }
 
@@ -569,9 +594,11 @@ html {
 }
 
 .fa-linkedin-in {
-  background: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #006192;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: 0.4s;
 }
 
@@ -581,9 +608,11 @@ html {
 }
 
 .fa-telegram-plane {
-  background: var(--light);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #0088cc;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: 0.4s;
 }
 
@@ -597,6 +626,7 @@ html {
   margin-top: 40px;
   font-size: 0.8em !important;
   text-align: center;
+  color: var(--dark) !important;
 }
 
 .fa-copyright {
@@ -613,7 +643,7 @@ p a:hover {
 }
 
 p a {
-  color: var(--secondary);
+  color: var(--dark);
 }
 
 /* responsive css */
@@ -622,11 +652,8 @@ p a {
   .sidenavbar {
     display: none;
   }
-  /* top image */
-  .image {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("https://source.unsplash.com/1_CMoFsPfso/900x1600") no-repeat center
-        center/cover;
+  /* top area */
+  .top-area {
     height: 100vh;
     transition: 0.4s;
   }
@@ -639,6 +666,7 @@ p a {
     left: 50%;
     transform: translate(-50%, -40%);
     color: var(--light);
+    font-size: 0.8em;
   }
 
   /* scroll button */
@@ -727,7 +755,7 @@ p a {
   }
 
   .top_nav_items a:hover {
-    background: var(--primary);
+    background: var(--secondary);
   }
 
   .top_nav_items i {
