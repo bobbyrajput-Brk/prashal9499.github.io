@@ -672,7 +672,7 @@ p a {
 
   /* scroll button */
   .btn-scroll {
-    display: block;
+    display: none;
   }
 
   .button-margin {
