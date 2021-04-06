@@ -20,7 +20,6 @@ html {
   height: 100vh;
   transition: 0.4s;
   background: hsla(298, 68%, 90%, 1);
-
   background: linear-gradient(
     90deg,
     hsla(298, 68%, 90%, 1) 0%,
@@ -645,6 +644,23 @@ p a:hover {
 
 p a {
   color: var(--dark);
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbe8d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
 /* responsive css */
