@@ -1,7 +1,7 @@
 /* root variables */
 :root {
-  --primary: #ffcb97;
-  --secondary: #fca9ff;
+  --primary: #7730f9;
+  --secondary: #7630f996;
   --light: #ffffff;
   --dark: #000000;
   --font-dark: #181818;
@@ -19,21 +19,19 @@ html {
   scroll-behavior: smooth;
   height: 100vh;
   transition: 0.4s;
-  background: hsla(298, 68%, 90%, 1);
-  background: linear-gradient(
-    90deg,
-    hsla(298, 68%, 90%, 1) 0%,
-    hsla(30, 82%, 91%, 1) 100%
-  );
+  background: url("https://frontendjoe.com/images/wallpapers/squares.png")
+    no-repeat center/cover;
 }
 
 /* side navbar */
 .sidenavbar {
-  padding-top: 67px;
   position: fixed;
   width: 250px;
   height: 100vh;
   background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* profile, avatar */
@@ -42,13 +40,17 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sidenavbar .profile .profile_avatar {
   width: 170px;
   height: 170px;
+  padding: 50px;
   border-radius: 50%;
-  margin-bottom: 10px;
   transition: 0.4s;
 }
 
@@ -60,7 +62,7 @@ html {
 }
 
 .sidenavbar .profile h3 {
-  color: var(--dark);
+  color: var(--light);
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: normal;
@@ -69,7 +71,7 @@ html {
 
 /* side navbar text */
 .about {
-  color: var(--secondary);
+  color: var(--primary);
   margin-top: 0;
   font-size: 0.9em;
   text-align: center;
@@ -83,6 +85,7 @@ html {
   width: 100%;
   line-height: 60px;
   text-decoration: none !important;
+  margin-top: 8px;
   padding-left: 65px;
   box-sizing: border-box;
   transition: 0.4s;
@@ -111,13 +114,13 @@ html {
   left: 50%;
   letter-spacing: 0.1em;
   transform: translate(-50%, -50%);
-  color: var(--dark) !important;
+  color: var(--light) !important;
 }
 
 .typewrite {
   text-align: center;
   font-size: 1.8em !important;
-  color: var(--dark) !important;
+  color: var(--light) !important;
 }
 
 .abs-center-x {
@@ -138,7 +141,7 @@ html {
   width: 32px;
   height: 58px;
   border-radius: 100px;
-  border: 2px solid var(--dark);
+  border: 2px solid var(--light);
 }
 
 .mouse::before {
@@ -147,7 +150,7 @@ html {
   height: 10px;
   position: absolute;
   top: 20px;
-  background: var(--dark);
+  background: var(--light);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100%;
@@ -207,6 +210,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
@@ -236,6 +240,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #010a14;
 }
 
@@ -243,6 +248,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #006fcd;
 
   margin-left: -16px;
@@ -252,6 +258,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #1ed761;
 }
 
@@ -259,6 +266,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #cc0000;
 }
 
@@ -266,6 +274,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #872ec4;
 }
 
@@ -273,6 +282,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #3c327b;
   margin-left: 8.5px;
 }
@@ -292,6 +302,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transition: 0.4s;
   padding: 20px 0 40px 0;
@@ -301,23 +312,44 @@ html {
   transform: scale(0.98);
 }
 
+/* item content */
+.item_text {
+  color: var(--light);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.item_addtext {
+  font-size: 1.25em;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--light) !important;
+  transition: 0.4s;
+}
+
 #item1 {
   grid-area: item1;
+  background: url("images/Covid-19Tracker.png");
 }
 #item2 {
   grid-area: item2;
+  background: url("images/AutomobileWebsite.png");
 }
 #item3 {
   grid-area: item3;
+  background: url("images/E-Notes.png");
 }
 #item4 {
   grid-area: item4;
+  background: url("images/CodezillaForum.png");
 }
 #item5 {
   grid-area: item5;
+  background: url("images/Portfolio.png");
 }
 #item6 {
   grid-area: item6;
+  background: url("images/AnalogClock.png");
 }
 
 /* button */
@@ -480,6 +512,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #553c7b;
 }
 
@@ -487,6 +520,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #0066b8;
   margin-left: -19px;
 }
@@ -495,6 +529,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #cd6799;
 }
 
@@ -502,6 +537,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #28323c;
   margin-left: 27px;
 }
@@ -510,14 +546,16 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #211f1f;
 }
 
-.fa-ubuntu {
+.fa-wordpress {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  color: #dd4814;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  color: #00749c;
   margin-left: 11px;
 }
 
@@ -555,6 +593,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #1778f2;
   border-radius: 14px;
   transition: 0.4s;
@@ -569,6 +608,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #dd2a7b;
   border-radius: 14px;
   transition: 0.4s;
@@ -583,6 +623,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #211f1f;
   border-radius: 14px;
   transition: 0.4s;
@@ -597,6 +638,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #006192;
   border-radius: 14px;
   transition: 0.4s;
@@ -611,6 +653,7 @@ html {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #0088cc;
   border-radius: 14px;
   transition: 0.4s;
@@ -652,15 +695,15 @@ p a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fbe8d5;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--light);
+  background: var(--primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 /* responsive css */
@@ -750,7 +793,7 @@ p a {
 
   /* dropdown button */
   .nav_bar .nav_btn {
-    color: var(--dark);
+    color: var(--light);
     cursor: pointer;
   }
 
@@ -825,6 +868,11 @@ p a {
 
   .item {
     padding: 10px 20px 20px 20px !important;
+  }
+
+  .item_text {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   /* skill bar */
