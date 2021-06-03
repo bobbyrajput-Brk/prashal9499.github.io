@@ -19,8 +19,7 @@ html {
   scroll-behavior: smooth;
   height: 100vh;
   transition: 0.4s;
-  background: url("https://source.unsplash.com/collection/90135330/1600x900")
-    no-repeat center/cover;
+  background: url("images/Landscape.png") no-repeat center/cover;
 }
 
 /* side navbar */
@@ -714,6 +713,9 @@ p a {
 
 /* responsive css */
 @media screen and (max-width: 1024px) {
+  body {
+    background: url("images/Potrait.png") no-repeat center/cover;
+  }
   /* sidebar */
   .sidenavbar {
     display: none;
