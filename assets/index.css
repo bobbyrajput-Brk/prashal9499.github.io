@@ -1,7 +1,7 @@
 /* root variables */
 :root {
   --primary: #7730f9;
-  --secondary: #7630f996;
+  --secondary: #00000020;
   --light: #ffffff;
   --dark: #000000;
   --font-dark: #181818;
@@ -18,7 +18,6 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100vh;
-  transition: 0.4s;
   background: url("images/Landscape.png") no-repeat center/cover;
 }
 
@@ -76,7 +75,7 @@ html {
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 2px 10px;
-  border-radius: 10px;
+  border-radius: 2px;
   margin-top: 0;
   font-size: 0.9em;
   text-align: center;
@@ -216,7 +215,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 /* icons */
@@ -235,7 +234,7 @@ html {
 
 .icon-bg {
   padding: 20px 16px;
-  border-radius: 20px;
+  border-radius: 5px;
   text-align: center;
   text-decoration: none;
 }
@@ -246,7 +245,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #010a14;
+  color: var(--primary);
 }
 
 .fa-playstation {
@@ -254,7 +253,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #006fcd;
+  color: var(--primary);
 
   margin-left: -16px;
 }
@@ -264,7 +263,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #1ed761;
+  color: var(--primary);
 }
 
 .fa-cog {
@@ -272,7 +271,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #cc0000;
+  color: var(--primary);
 }
 
 .fa-mobile-alt {
@@ -280,7 +279,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #872ec4;
+  color: var(--primary);
 }
 
 .fa-image {
@@ -288,17 +287,18 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #3c327b;
+  color: var(--primary);
   margin-left: 8.5px;
 }
 
 /* project section grid */
 .container {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-areas:
-    "item1 item2 item3"
-    "item4 item5 item6";
+    "item1 item1 item2"
+    "item3 item4 item4"
+    "item5 item5 item6";
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -308,7 +308,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 5px;
   transition: 0.4s;
   padding: 20px 0 40px 0;
 }
@@ -322,6 +322,8 @@ html {
   color: var(--light);
   margin-left: 50px;
   margin-right: 50px;
+  padding: 0 0 10px 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .item_addtext {
@@ -332,29 +334,82 @@ html {
   transition: 0.4s;
 }
 
+.btn {
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 0;
+  height: 30px;
+  width: 70px;
+  padding: 10px;
+  color: var(--light);
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
 #item1 {
   grid-area: item1;
   background: url("images/Covid-19Tracker.png");
+  transition: 0.4s;
 }
+
+#item1:hover {
+  cursor: pointer;
+}
+
 #item2 {
   grid-area: item2;
   background: url("images/AutomobileWebsite.png");
 }
+
+#item2:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 #item3 {
   grid-area: item3;
   background: url("images/E-Notes.png");
 }
+
+#item3:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 #item4 {
   grid-area: item4;
   background: url("images/CodezillaForum.png");
 }
+
+#item4:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 #item5 {
   grid-area: item5;
   background: url("images/Portfolio.png");
 }
+
+#item5:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 #item6 {
   grid-area: item6;
   background: url("images/AnalogClock.png");
+}
+
+#item6:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 /* button */
@@ -362,7 +417,7 @@ html {
   background: none;
   border: 1px solid var(--primary);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-right: 0;
   height: 40px;
   width: 70px;
@@ -423,7 +478,7 @@ html {
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
-  border-radius: 20px;
+  border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
     0 1px rgba(255, 255, 255, 0.3);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -438,7 +493,7 @@ html {
 .bar .progress-line span {
   height: 100%;
   position: absolute;
-  border-radius: 20px;
+  border-radius: 2px;
   transform: scaleX(0);
   transform-origin: left;
   background: var(--primary);
@@ -485,7 +540,7 @@ html {
   color: var(--light);
   padding: 5px 8px;
   font-size: 0.75em;
-  border-radius: 20px;
+  border-radius: 2px;
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -518,7 +573,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #553c7b;
+  color: var(--primary);
 }
 
 .fa-file-code {
@@ -526,7 +581,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #0066b8;
+  color: var(--primary);
   margin-left: -19px;
 }
 
@@ -535,24 +590,24 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #cd6799;
+  color: var(--primary);
 }
 
-.fa-terminal {
+.fa-figma {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #28323c;
+  color: var(--primary);
   margin-left: 27px;
 }
 
-.fa-github-alt {
+.fa-git {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #211f1f;
+  color: var(--primary);
 }
 
 .fa-wordpress {
@@ -560,8 +615,8 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #00749c;
-  margin-left: 11px;
+  color: var(--primary);
+  margin-left: 50px;
 }
 
 /* footer */
@@ -577,7 +632,7 @@ html {
 .social_icons {
   height: 10px;
   width: 50px;
-  border-radius: 50px;
+  border-radius: 0px;
   text-align: left;
 }
 
@@ -599,14 +654,13 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #1778f2;
-  border-radius: 14px;
-  transition: 0.4s;
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
 .fa-facebook-f:hover {
-  background: #1778f2;
-  color: var(--light);
+  transform: translateY(-8px);
 }
 
 .fa-instagram {
@@ -614,29 +668,27 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #dd2a7b;
-  border-radius: 14px;
-  transition: 0.4s;
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
 .fa-instagram:hover {
-  background: #dd2a7b;
-  color: var(--light);
+  transform: translateY(-8px);
 }
 
-.fa-github-square {
+.fa-github {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #211f1f;
-  border-radius: 14px;
-  transition: 0.4s;
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
-.fa-github-square:hover {
-  background: #211f1f;
-  color: var(--light);
+.fa-github:hover {
+  transform: translateY(-8px);
 }
 
 .fa-linkedin-in {
@@ -644,14 +696,13 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #006192;
-  border-radius: 14px;
-  transition: 0.4s;
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
 .fa-linkedin-in:hover {
-  background: #006192;
-  color: var(--light);
+  transform: translateY(-8px);
 }
 
 .fa-telegram-plane {
@@ -659,14 +710,13 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: #0088cc;
-  border-radius: 14px;
-  transition: 0.4s;
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
 .fa-telegram-plane:hover {
-  background: #0088cc;
-  color: var(--light);
+  transform: translateY(-8px);
 }
 
 /* end text */
@@ -708,7 +758,7 @@ p a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  background: #7630f996;
 }
 
 /* responsive css */
@@ -813,7 +863,7 @@ p a {
     backdrop-filter: blur(10px);
     margin: 10px;
     padding: 40px 10px;
-    border-radius: 20px;
+    border-radius: 5px;
   }
 
   .top_nav_items a {
@@ -825,7 +875,7 @@ p a {
     text-decoration: none !important;
     box-sizing: border-box;
     transition: 0.4s;
-    border-radius: 20px;
+    border-radius: 5px;
   }
 
   .top_nav_items a:hover {
