@@ -790,27 +790,11 @@ p a {
     padding: 10px !important;
   }
 
-  .top_nav_items .profile .profile_avatar {
-    width: 200px;
-    height: 200px;
-    padding: 30px;
-    border-radius: 50%;
-    transition: 0.4s;
-  }
-
-  .top_nav_items .profile .profile_avatar:hover {
-    transform: scale(1.2);
-    border-radius: 50%;
-    margin-bottom: 10px;
-    cursor: none;
-  }
-
-  .top_nav_items .profile h3 {
-    color: var(--light);
+  /* side navbar text */
+  .about {
+    padding: 2px 5px;
     margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: normal;
-    margin-top: 20px;
+    margin-bottom: 25px;
   }
 
   /* top navbar */
@@ -820,7 +804,7 @@ p a {
     align-items: center;
   }
 
-  /* responsive dropdown bar */
+  /* responsive side bar */
   .nav_bar {
     background: rgba(255, 255, 255, 0);
     display: flex;
@@ -843,6 +827,28 @@ p a {
     cursor: none;
   }
 
+  .side_nav_items .profile .profile_avatar {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  .side_nav_items .profile .profile_avatar:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: none;
+  }
+
+  .side_nav_items .profile h3 {
+    color: var(--light);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+
   /* sidebar button */
   .fa-bars {
     color: var(--light);
@@ -858,7 +864,7 @@ p a {
   }
 
   /* navbar contents */
-  .top_nav_items {
+  .side_nav_items {
     background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -872,11 +878,11 @@ p a {
     transition: all 0.4s;
   }
 
-  .top_nav_items::-webkit-scrollbar {
+  .side_nav_items::-webkit-scrollbar {
     display: none;
   }
 
-  .top_nav_items a {
+  .side_nav_items a {
     color: var(--dark);
     display: block;
     letter-spacing: 1px;
@@ -886,11 +892,11 @@ p a {
     padding: 0 0 50px 60px;
   }
 
-  .top_nav_items a:hover {
+  .side_nav_items a:hover {
     opacity: 0.7;
   }
 
-  .top_nav_items i {
+  .side_nav_items i {
     padding-right: 10px;
     color: var(--dark);
   }
