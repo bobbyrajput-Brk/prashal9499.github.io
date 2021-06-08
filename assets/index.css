@@ -1,7 +1,7 @@
 /* root variables */
 :root {
   --primary: #7730f9;
-  --secondary: #00000020;
+  --secondary: #00000073;
   --light: #ffffff;
   --dark: #000000;
   --font-dark: #181818;
@@ -96,7 +96,7 @@ html {
 }
 
 .sidenavbar a:hover {
-  background: var(--secondary);
+  opacity: 0.7;
 }
 
 .sidenavbar i {
@@ -240,12 +240,12 @@ html {
 }
 
 /* things i like */
-.fa-laptop-code {
+.fa-code {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #333333;
 }
 
 .fa-playstation {
@@ -253,8 +253,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
-
+  color: #006fcd;
   margin-left: -16px;
 }
 
@@ -263,7 +262,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #1ed761;
 }
 
 .fa-cog {
@@ -271,7 +270,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #9ec4c5;
 }
 
 .fa-mobile-alt {
@@ -279,7 +278,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #003057;
 }
 
 .fa-image {
@@ -287,7 +286,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #79975a;
   margin-left: 8.5px;
 }
 
@@ -315,6 +314,7 @@ html {
 
 .item:hover {
   transform: scale(0.98);
+  cursor: pointer;
 }
 
 /* item content */
@@ -358,18 +358,9 @@ html {
   transition: 0.4s;
 }
 
-#item1:hover {
-  cursor: pointer;
-}
-
 #item2 {
   grid-area: item2;
   background: url("images/AutomobileWebsite.png");
-}
-
-#item2:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }
 
 #item3 {
@@ -377,19 +368,9 @@ html {
   background: url("images/E-Notes.png");
 }
 
-#item3:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
 #item4 {
   grid-area: item4;
   background: url("images/CodezillaForum.png");
-}
-
-#item4:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }
 
 #item5 {
@@ -397,19 +378,9 @@ html {
   background: url("images/Portfolio.png");
 }
 
-#item5:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
 #item6 {
   grid-area: item6;
   background: url("images/AnalogClock.png");
-}
-
-#item6:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }
 
 /* button */
@@ -573,7 +544,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #7952b3;
 }
 
 .fa-file-code {
@@ -581,7 +552,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #0066b8;
   margin-left: -19px;
 }
 
@@ -590,7 +561,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #cd6799;
 }
 
 .fa-figma {
@@ -598,7 +569,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #0acf83;
   margin-left: 27px;
 }
 
@@ -607,7 +578,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #f1502f;
 }
 
 .fa-wordpress {
@@ -615,7 +586,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #0073aa;
   margin-left: 50px;
 }
 
@@ -654,7 +625,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #1778f2;
   border-radius: 5px;
   transition: 0.2s;
 }
@@ -668,7 +639,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #dd2a7b;
   border-radius: 5px;
   transition: 0.2s;
 }
@@ -677,26 +648,12 @@ html {
   transform: translateY(-8px);
 }
 
-.fa-github {
-  background: rgba(255, 255, 255, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
-  border-radius: 5px;
-  transition: 0.2s;
-}
-
-.fa-github:hover {
-  transform: translateY(-8px);
-}
-
 .fa-linkedin-in {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #006192;
   border-radius: 5px;
   transition: 0.2s;
 }
@@ -705,12 +662,26 @@ html {
   transform: translateY(-8px);
 }
 
+.fa-github {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  color: #211f1f;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.fa-github:hover {
+  transform: translateY(-8px);
+}
+
 .fa-telegram-plane {
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  color: var(--primary);
+  color: #0088cc;
   border-radius: 5px;
   transition: 0.2s;
 }
@@ -819,6 +790,29 @@ p a {
     padding: 10px !important;
   }
 
+  .top_nav_items .profile .profile_avatar {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  .top_nav_items .profile .profile_avatar:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: none;
+  }
+
+  .top_nav_items .profile h3 {
+    color: var(--light);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
   /* top navbar */
   .top_nav {
     display: block;
@@ -849,37 +843,51 @@ p a {
     cursor: none;
   }
 
-  /* dropdown button */
-  .nav_bar .nav_btn {
+  /* sidebar button */
+  .fa-bars {
     color: var(--light);
+    font-size: 30px;
     cursor: pointer;
+  }
+
+  .fa-times {
+    color: var(--light) !important;
+    position: absolute;
+    top: 22px;
+    right: 15px;
   }
 
   /* navbar contents */
   .top_nav_items {
-    display: none;
     background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    margin: 10px;
-    padding: 40px 10px;
-    border-radius: 5px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all 0.4s;
+  }
+
+  .top_nav_items::-webkit-scrollbar {
+    display: none;
   }
 
   .top_nav_items a {
     color: var(--dark);
     display: block;
-    text-align: center;
     letter-spacing: 1px;
-    line-height: 60px;
-    text-decoration: none !important;
-    box-sizing: border-box;
     transition: 0.4s;
     border-radius: 5px;
+    text-decoration: none;
+    padding: 0 0 50px 60px;
   }
 
   .top_nav_items a:hover {
-    background: var(--secondary);
+    opacity: 0.7;
   }
 
   .top_nav_items i {
@@ -943,7 +951,7 @@ p a {
     margin-left: 0;
   }
 
-  .fa-terminal {
+  .fa-figma {
     margin-left: 0;
   }
 

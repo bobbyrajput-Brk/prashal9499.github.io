@@ -4,6 +4,7 @@
 <head>
   <!-- required meta tags -->
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Prashal Tarkas - Passionate about web designing and learning new technological stuff">
@@ -15,7 +16,7 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -24,27 +25,36 @@
   <div class="top_nav">
     <div class="nav_bar">
       <img src="assets/images/avatar.png" class="top_nav_avatar" alt="Prashal Tarkas">
-      <i class="fas fa-bars fa-lg nav_btn"></i>
+      <i class="fas fa-bars fa-lg" onclick="openNav()"></i>
     </div>
-    <div class="top_nav_items">
-      <a href="#about_me">
+    <div class="top_nav_items" id="mySidenav">
+      <div class="profile">
+        <img src="assets/images/avatar.png" class="profile_avatar" alt="Prashal Tarkas">
+        <h3>Prashal Tarkas</h3>
+        <p class="about">Student, Web-Developer, Geek</p>
+      </div>
+      <a href="javascript:void(0)" onclick="closeNav()">
+        <i class="fas fa-times fa-lg"></i>
+      </a>
+      <a href="#about_me" onclick="closeNav()">
         <i class="far fa-address-card fa-lg"></i>
         <span>About Me</span>
       </a>
-      <a href="#projects">
-        <i class="fas fa-code fa-lg"></i>
+      <a href="#projects" onclick="closeNav()">
+        <i class="fas fa-tasks fa-lg"></i>
         <span>Projects</span>
       </a>
-      <a href="#skills">
-        <i class="fas fa-bars fa-lg"></i>
+      <a href="#skills" onclick="closeNav()">
+        <i class="fas fa-list-ul fa-lg"></i>
         <span>Skills</span>
       </a>
-      <a href="https://drive.google.com/file/d/1ijgbJN_kQZN4rzh7l5ghUKX9N_77j6Qs/view?usp=sharing" target="_blank">
+      <a href="https://drive.google.com/file/d/1ijgbJN_kQZN4rzh7l5ghUKX9N_77j6Qs/view?usp=sharing" target="_blank"
+        onclick="closeNav()">
         <i class="far fa-file fa-lg"></i>
         <span>Resume</span>
       </a>
-      <a href="#contactme">
-        <i class="fas fa-at fa-lg"></i>
+      <a href="#contactme" onclick="closeNav()">
+        <i class="far fa-envelope fa-lg"></i>
         <span>Contact Me</span>
       </a>
     </div>
@@ -62,11 +72,11 @@
       <span>About Me</span>
     </a>
     <a href="#projects">
-      <i class="fas fa-code fa-lg"></i>
+      <i class="fas fa-tasks fa-lg"></i>
       <span>Projects</span>
     </a>
     <a href="#skills">
-      <i class="fas fa-bars fa-lg"></i>
+      <i class="fas fa-list-ul fa-lg"></i>
       <span>Skills</span>
     </a>
     <a href="https://drive.google.com/file/d/1ijgbJN_kQZN4rzh7l5ghUKX9N_77j6Qs/view?usp=sharing" target="_blank">
@@ -74,7 +84,7 @@
       <span>Resume</span>
     </a>
     <a href="#contactme">
-      <i class="fas fa-at fa-lg"></i>
+      <i class="far fa-envelope fa-lg"></i>
       <span>Contact Me</span>
     </a>
   </div>
@@ -121,31 +131,31 @@
           <h1 class=" main_text">Things I like</h1>
           <div>
             <p class="icon-display">
-              <i class="fas fa-laptop-code fa-lg  icon-fg icon-bg"></i>
+              <i class="fas fa-code fa-lg icon-fg icon-bg"></i>
               <span>Coding</span>
             </p>
             <p class="icon-display">
-              <i class="fab fa-playstation fa-lg  icon-fg icon-bg iconmrg"></i>
+              <i class="fab fa-playstation fa-lg icon-fg icon-bg iconmrg"></i>
               <span>Gaming</span>
             </p>
           </div>
           <div>
             <p class="icon-display">
-              <i class="fab fa-spotify fa-lg  icon-fg icon-bg"></i>
+              <i class="fab fa-spotify fa-lg icon-fg icon-bg"></i>
               <span>Music</span>
             </p>
             <p class="icon-display">
-              <i class="fas fa-cog fa-lg  icon-fg icon-bg"></i>
+              <i class="fas fa-cog fa-lg icon-fg icon-bg"></i>
               <span>Automobile</span>
             </p>
           </div>
           <div>
             <p class="icon-display">
-              <i class="fas fa-mobile-alt fa-lg  icon-fg icon-bg"></i>
+              <i class="fas fa-mobile-alt fa-lg icon-fg icon-bg"></i>
               <span>Tech</span>
             </p>
             <p class="icon-display">
-              <i class="far fa-image fa-lg  icon-fg icon-bg iconmrg"></i>
+              <i class="far fa-image fa-lg icon-fg icon-bg iconmrg"></i>
               <span>Photography</span>
             </p>
           </div>
@@ -341,7 +351,7 @@
 
   <!-- javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-  <script src="assets/index.js"></script>
+  <script src="assets/sidenav.js"></script>
   <script src="assets/typewrite.js"></script>
 
 </body>
