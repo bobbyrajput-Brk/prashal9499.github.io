@@ -299,11 +299,8 @@ html {
   display: grid;
   grid-gap: 2rem;
   grid-template-areas:
-    "item1 item1 item2"
-    "item3 item4 item4"
-    "item5 item5 item6";
-  margin-left: 50px;
-  margin-right: 50px;
+    "item1 item2 item3"
+    "item4 item5 item6";
 }
 
 .item {
@@ -327,7 +324,7 @@ html {
   margin-left: 50px;
   margin-right: 50px;
   padding: 0 0 10px 0;
-  border-bottom: 3px solid #ffffff33;
+  border-bottom: 3px solid var(--primary);
 }
 
 .item_addtext {
@@ -339,52 +336,24 @@ html {
 }
 
 .btn {
-  background: #ffffff33;
+  background: none;
   text-align: center;
   border-radius: 5px;
+  border: 1px solid var(--primary);
   margin-right: 0;
-  height: 30px;
-  width: 70px;
-  padding: 10px;
-  color: var(--light);
+  height: 25px;
+  width: 50px;
+  padding: 5px;
+  color: var(--primary) !important;
   text-decoration: none;
   outline: none;
+  font-size: 1rem !important;
 }
 
 .btn:hover {
-  background: #ffffff1a;
+  background: var(--primary);
+  color: var(--light) !important;
   cursor: pointer;
-}
-
-#item1 {
-  grid-area: item1;
-  background: url("../images/Covid-19Tracker.png");
-  transition: 0.4s;
-}
-
-#item2 {
-  grid-area: item2;
-  background: url("../images/AutomobileWebsite.png");
-}
-
-#item3 {
-  grid-area: item3;
-  background: url("../images/E-Notes.png");
-}
-
-#item4 {
-  grid-area: item4;
-  background: url("../images/CodezillaForum.png");
-}
-
-#item5 {
-  grid-area: item5;
-  background: url("../images/Portfolio.png");
-}
-
-#item6 {
-  grid-area: item6;
-  background: url("../images/AnalogClock.png");
 }
 
 /* button */
@@ -400,6 +369,7 @@ html {
   transition: 0.4s;
   text-decoration: none;
   outline: none;
+  width: 100px;
 }
 
 .button-margin {
@@ -626,12 +596,12 @@ html {
   padding-bottom: 10px;
 }
 
-.fa-heart {
-  color: var(--primary);
+.add-text {
+  color: var(--light);
 }
 
-.fa-copyright {
-  margin-bottom: 5px;
+.fa-heart {
+  color: var(--primary);
 }
 
 /* link text decoration*/
@@ -639,12 +609,12 @@ a:link {
   text-decoration: none;
 }
 
-p a:hover {
-  text-decoration: underline;
+p a {
+  color: var(--primary);
 }
 
-p a {
-  color: var(--light);
+p a:hover {
+  text-decoration: underline;
 }
 
 /* scroll bar */
