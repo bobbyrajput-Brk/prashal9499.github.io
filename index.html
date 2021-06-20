@@ -69,6 +69,8 @@
       <h3>Prashal Tarkas</h3>
       <p class="about">Student, Web-Developer, Geek</p>
     </div>
+
+    <!-- nav bar items -->
     <a href="#about_me">
       <i class="far fa-address-card fa-lg"></i>
       <span>About Me</span>
@@ -95,17 +97,21 @@
   <div class="content">
     <div class="card">
 
-      <!-- side image -->
+      <!-- top image -->
       <div class="top-area p-1">
+
+        <!-- theme switcher button -->
+        <ul>
+          <li>
+            <span class="themeSwitch"></span>
+          </li>
+        </ul>
+
+        <!-- top image text -->
         <div class="top_text">
-          <h1>
-
-            <!-- top image text -->
-            <p class="typewrite" data-period="2000"
-              data-type='["Hi, Hello, नमस्ते", "I am", "Prashal Tarkas", "Web-Developer", "Student", "Geek"]'>
-              <span class="wrap"></span>
-            </p>
-
+          <h1 class="typewrite" data-period="2000"
+            data-type='["Hi, Hello, नमस्ते", "I am", "Prashal Tarkas", "Web-Developer", "Student", "Geek"]'>
+            <span class="wrap"></span>
           </h1>
         </div>
         <a href="#about_me">
@@ -169,7 +175,6 @@
           <p>Some of my projects...</p>
           <section class="container mt-4 mb-4">
             <article id=item1 class="item">
-
               <h2 class="item_text">Codezilla Forum</h2>
               <p class="item_addtext">A forum dedicated to solve coding queries. user can add thread and
                 comment.</p>
@@ -178,11 +183,8 @@
                   View
                 </p>
               </a>
-
-
             </article>
             <article id=item2 class="item">
-
               <h2 class="item_text">COVID-19 Tracker</h2>
               <p class="item_addtext">A COVID-19 cases tracking website which uses APIs to fetch data.
               </p>
@@ -315,7 +317,7 @@
         <div class="p-1" id="contactme">
           <h1 class=" main_text mt-4">Contact Me</h1>
           <a href="mailto:prashal09@gmail.com" target="_blank">
-            <button class="button button-margin">
+            <button class="button">
               <span>Send E-mail</span>
             </button>
           </a>
@@ -356,11 +358,7 @@
   </div>
 
   <!-- javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-  <script src="assets/javascript/sidenav.js"></script>
-  <script src="assets/javascript/typewrite.js"></script>
-  <script src="assets/javascript/autoyear.js"></script>
-
+  <script src="assets/javascript/index.js"></script>
 </body>
 
 </html>

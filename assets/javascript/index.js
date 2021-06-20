@@ -49,9 +49,29 @@ window.onload = function () {
             new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // CSS
+    
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid var(--light)}";
     document.body.appendChild(css);
 };
+
+//change theme light and dark mode
+let themeSwitch = document.querySelector('.themeSwitch');
+let body = document.querySelector('body');
+themeSwitch.onclick = function(){
+    themeSwitch.classList.toggle('active');
+    body.classList.toggle('dark');
+}
+
+// sidenav toggle buttons
+const openNav = () => {
+    document.getElementById('mySidenav').style.width = "250px";
+  }
+  
+  const closeNav = () => {
+    document.getElementById('mySidenav').style.width = "0";
+  }
+
+  // add year automatically to the copyright section
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
