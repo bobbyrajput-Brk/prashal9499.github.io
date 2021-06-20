@@ -120,6 +120,10 @@ body {
   background: url("../images/light.jpg") no-repeat center/cover;
 }
 
+ul li {
+  list-style: none;
+}
+
 /* theme  switcher button */
 .themeSwitch {
   position: absolute;
