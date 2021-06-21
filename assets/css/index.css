@@ -33,6 +33,17 @@ body {
   background: var(--background);
 }
 
+/* preloader */
+#preloader {
+  background: url("../images/preloader.gif") no-repeat center center
+    var(--background);
+  background-size: 5%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 /* side navbar */
 .sidenavbar {
   position: fixed;
@@ -139,16 +150,16 @@ ul li {
 }
 
 .themeSwitch::before {
-  content: "\f186";
+  content: "\f185";
   font-family: "Font Awesome 5 Free";
-  color: #fefcd7;
+  color: #fdb813;
   font-size: 20px;
   font-weight: 900;
 }
 
 .themeSwitch.active::before {
-  content: "\f185";
-  color: #fdb813;
+  content: "\f186";
+  color: #fefcd7;
 }
 
 /* typewriter text */
@@ -696,6 +707,11 @@ p a:hover {
 
 /* responsive css */
 @media screen and (max-width: 1024px) {
+  /* preloader */
+  #preloader {
+    background-size: 25% !important;
+  }
+
   /* sidebar */
   .sidenavbar {
     display: none;

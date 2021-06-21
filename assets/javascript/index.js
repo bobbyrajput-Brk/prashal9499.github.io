@@ -1,3 +1,9 @@
+//preloader 
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+})
+
 // top image typewrite text
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
