@@ -206,7 +206,7 @@ ul li {
   width: 37px;
   height: 62px;
   border-radius: 100px;
-  border: 2px solid var(--light);
+  border: 2px solid var(--font-secondary);
 }
 
 .mouse::before {
@@ -215,7 +215,7 @@ ul li {
   height: 10px;
   position: absolute;
   top: 20px;
-  background: var(--light);
+  background: var(--font-secondary);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100%;
@@ -261,7 +261,15 @@ ul li {
 }
 
 .highlited {
-  color: var(--primary);
+  color: var(--background);
+  background: linear-gradient(
+  45deg,
+    rgb(19, 173, 199) 0%,
+    rgb(148, 93, 214) 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
 }
 
 .bold {
@@ -942,7 +950,7 @@ p a:hover {
 @media screen and (max-width: 360px) {
   /* top text */
   .top_text {
-    font-size: 1.6rem !important;
+    font-size: 1.9rem !important;
   }
 
   /* theme switcher button */
@@ -1005,7 +1013,19 @@ p a:hover {
   }
 }
 
+@media screen and (max-width: 320px) {
+    /* top text */
+    .top_text {
+      font-size: 1.6rem !important;
+    }
+}
+
 @media screen and (max-width: 280px) {
+  /* top text */
+  .top_text {
+    font-size: 1.6rem !important;
+  }
+
   /* sidebar button */
   .fa-times {
     padding: 0.4rem;
