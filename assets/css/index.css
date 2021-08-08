@@ -16,6 +16,7 @@
   --light: #151418;
   --dark: #ffffff;
   --base: #ffffff;
+  --bar-base: #f0f0f0;
   --font-dark: #46454a;
   --font-secondary: #6b6b6b;
   --box-shadow: #00000033;
@@ -28,6 +29,7 @@
   --light: #ffffff;
   --dark: #151418;
   --base: #121c2ebb;
+  --bar-base: #121c2ebb;
 }
 
 /* background color */
@@ -475,7 +477,7 @@ button:hover {
 .skill-bars .bar .progress-line {
   height: 20px;
   width: 100%;
-  background: var(--background-secondary);
+  background: var(--bar-base);
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
@@ -531,7 +533,7 @@ button:hover {
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 6px;
-  border-top-color: var(--background-secondary);
+  border-top-color: var(--bar-base);
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -541,7 +543,7 @@ button:hover {
   top: -40px;
   right: 0;
   font-weight: 400;
-  background: var(--background-secondary);
+  background: var(--bar-base);
   color: var(--light);
   padding: 5px 8px;
   font-size: 1em;
