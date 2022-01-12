@@ -334,31 +334,60 @@ ul li {
   text-decoration: none;
 }
 
-/* things i like */
-.fa-code {
-  color: #2ad8cf;
+/* skills */
+.fa-js {
+  color: #f0db4f;
 }
 
-.fa-playstation {
-  color: #006fcd;
-  margin-left: 57px;
+.fa-css3-alt {
+  color: #3c99dc;
 }
 
-.fa-spotify {
-  color: #1ed761;
+.fa-html5 {
+  color: #f06529;
+  margin-left: 25px;
 }
 
-.fa-cog {
-  color: #9ec4c5;
+.fa-layer-group {
+  color: #f65a5b;
 }
 
-.fa-mobile-alt {
-  color: #7de0aa;
+.fa-php {
+  color: #787cb5;
+  margin-left: -26px;
 }
 
-.fa-image {
-  color: #79975a;
-  margin-left: 35.5px;
+.fa-database {
+  color: #00758f;
+  margin-left: 41px;
+}
+
+/* tools & technoligies */
+.fa-bootstrap {
+  color: #7952b3;
+}
+
+.fa-file-code {
+  color: #0066b8;
+  margin-left: -5px;
+}
+
+.fa-sass {
+  color: #cd6799;
+}
+
+.fa-figma {
+  color: #0acf83;
+}
+
+.fa-git {
+  color: #f1502f;
+  margin-left: 50.5px;
+}
+
+.fa-wordpress {
+  color: #0073aa;
+  margin-left: 70.5px;
 }
 
 /* project section grid */
@@ -443,163 +472,31 @@ button:hover {
   transform: translateX(5px);
 }
 
-/* skill bar */
-.skill-bars {
-  margin: 0 58px;
+/* things i like */
+.fa-code {
+  color: #2ad8cf;
 }
 
-.skill-bars .bar {
-  margin: 20px 0;
-  padding: 0 0 20px 0;
+.fa-playstation {
+  color: #006fcd;
+  margin-left: 57px;
 }
 
-.skill-bars .bar:first-child {
-  margin-top: 0px;
+.fa-spotify {
+  color: #1ed761;
 }
 
-.skill-bars .bar .info {
-  margin-bottom: 5px;
+.fa-cog {
+  color: #9ec4c5;
 }
 
-.skill-bars .bar .info span {
-  font-size: 1.7em;
-  color: var(--font-secondary);
-  opacity: 0;
-  animation: showText 0.5s 1s linear forwards;
+.fa-mobile-alt {
+  color: #7de0aa;
 }
 
-@keyframes showText {
-  100% {
-    opacity: 1;
-  }
-}
-
-.skill-bars .bar .progress-line {
-  height: 20px;
-  width: 100%;
-  background: var(--bar-base);
-  position: relative;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: 2px;
-  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.bar .progress-line span {
-  height: 100%;
-  position: absolute;
-  border-radius: 2px;
-  transform: scaleX(0);
-  transform-origin: left;
-  background: var(--secondary);
-  background: -webkit-linear-gradient(
-    45deg,
-    var(--secondary) 0%,
-    var(--primary) 100%
-  );
-  background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
-  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-.bar .progress-line.html span {
-  width: 90%;
-}
-.bar .progress-line.css span {
-  width: 75%;
-}
-.bar .progress-line.js span {
-  width: 45%;
-}
-.bar .progress-line.php span {
-  width: 65%;
-}
-.bar .progress-line.mysql span {
-  width: 50%;
-}
-
-.progress-line span::before {
-  position: absolute;
-  content: "";
-  top: -10px;
-  right: 12px;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 6px;
-  border-top-color: var(--bar-base);
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
-}
-
-.progress-line span::after {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  font-weight: 400;
-  background: var(--bar-base);
-  color: var(--light);
-  padding: 5px 8px;
-  font-size: 1em;
-  border-radius: 2px;
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
-}
-
-@keyframes showText2 {
-  100% {
-    opacity: 1;
-  }
-}
-
-.progress-line.html span::after {
-  content: "90%";
-}
-.progress-line.css span::after {
-  content: "75%";
-}
-.progress-line.js span::after {
-  content: "45%";
-}
-.progress-line.php span::after {
-  content: "65%";
-}
-.progress-line.mysql span::after {
-  content: "50%";
-}
-
-/* tools & technoligies */
-.fa-bootstrap {
-  color: #7952b3;
-}
-
-.fa-file-code {
-  color: #0066b8;
-  margin-left: -5px;
-}
-
-.fa-sass {
-  color: #cd6799;
-}
-
-.fa-figma {
-  color: #0acf83;
-}
-
-.fa-git {
-  color: #f1502f;
-  margin-left: 50.5px;
-}
-
-.fa-wordpress {
-  color: #0073aa;
-  margin-left: 70.5px;
+.fa-image {
+  color: #79975a;
+  margin-left: 35.5px;
 }
 
 /* button */
@@ -896,13 +793,38 @@ p a:hover {
     padding: 28px 20px;
   }
 
-  /* things i like */
-  .fa-playstation {
-    margin-left: 0 !important;
+  /* skills */
+  .fa-html5 {
+    margin-left: 0;
   }
 
-  .fa-image {
-    margin-left: 0 !important;
+  .fa-php {
+    margin-left: 0;
+  }
+
+  .fa-database {
+    margin-left: 0;
+  }
+
+  /* tools & technoligies */
+  .fa-file-code {
+    margin-left: 0;
+  }
+
+  .fa-figma {
+    margin-left: 0;
+  }
+
+  .fa-git {
+    margin-left: 0;
+  }
+
+  .fa-wordpress {
+    margin-left: 0;
+  }
+
+  .faux_btn {
+    margin: 10px 10px 0 0;
   }
 
   /* project section grid */
@@ -931,39 +853,13 @@ p a:hover {
     margin: 0 !important;
   }
 
-  /* skill bar */
-  .skill-bars {
-    margin: 10px;
+  /* things i like */
+  .fa-playstation {
+    margin-left: 0 !important;
   }
 
-  .skill-bars .bar .info span {
-    font-size: 1.5em;
-  }
-
-  .progress-line span::after {
-    top: -35px;
-    font-size: 0.8em;
-  }
-
-  /* tools & technoligies */
-  .fa-file-code {
-    margin-left: 0;
-  }
-
-  .fa-figma {
-    margin-left: 0;
-  }
-
-  .fa-git {
-    margin-left: 0;
-  }
-
-  .fa-wordpress {
-    margin-left: 0;
-  }
-
-  .faux_btn {
-    margin: 10px 10px 0 0;
+  .fa-image {
+    margin-left: 0 !important;
   }
 }
 
@@ -1005,15 +901,6 @@ p a:hover {
 
   .icon-bg {
     padding: 22px 18px;
-  }
-
-  /* skill bar */
-  .skill-bars .bar .info span {
-    font-size: 1.3em;
-  }
-
-  .progress-line span::after {
-    font-size: 0.7em;
   }
 
   /* button */
@@ -1072,15 +959,6 @@ p a:hover {
 
   .icon-bg {
     padding: 20px 14px;
-  }
-
-  /* skill bar */
-  .skill-bars .bar .info span {
-    font-size: 1.2em;
-  }
-
-  .progress-line span::after {
-    top: -33px;
   }
 
   /* button */
